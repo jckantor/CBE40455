@@ -5,4 +5,4 @@ These mathprog models, matlab files, and IPython notebooks can be downloaded ind
 
 ## Discrete Event Simulation
 
-* [Warehouse Operations](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Warehouse%20Operations.ipynb)
+* [Warehouse Fulfillment Operations](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Warehouse%20Fulfillment%20Operations.ipynb)
