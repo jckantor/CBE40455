@@ -1,7 +1,8 @@
-CBE40455
+Topics
 ========
-
 The Mathprog models, Matlab files, and IPython notebooks listed below can be downloaded individually. Click on the link to view, then click on the download button to save on your computer.
+
+* [Getting Started with GNU MathProg](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20GNU%20MathProg.ipynb)
 
 ### Scheduling ##
 * [Jesuit Volunteers Corps](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Jesuit%20Volunteer%20Corps.ipynb)
