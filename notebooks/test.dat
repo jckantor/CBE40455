@@ -1,0 +1,6 @@
+
+data;
+
+param a := 3;
+
+end;
