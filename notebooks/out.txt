@@ -1,2 +1,2 @@
-Hello, World
-Hello
+Display statement at line 5
+25.3
