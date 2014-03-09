@@ -1,2 +1,0 @@
-Display statement at line 5
-25.3
