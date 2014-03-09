@@ -4,6 +4,8 @@ The Mathprog models, Matlab files, and IPython notebooks listed below can be dow
 
 ## Linear Optimization
 * [Getting Started with GNU MathProg](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20GNU%20MathProg.ipynb)
+* [Production Model with Constraints](http://nbviewer.ipython.org/github/jckantor/ESTM60203/blob/master/notebooks/Production%20Models%20with%20Constraints.ipynb)
+* [Transportation Networks](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Transportation%20Networks.ipynb)
 
 ### Data Reconciliation ##
 * [Heat Exchanger with By-pass](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Data%20Reconciliation.ipynb)
