@@ -1,0 +1,37 @@
+\documentclass[tikz]{standalone}
+\usepackage{helvet}
+\usepackage[T1]{sansmath}
+\renewcommand{\familydefault}{\sfdefault}
+\normalfont
+
+\begin{document}
+\begin{sansmath}
+
+\tikzstyle{circ} = [circle,draw,thick,fill=blue!05,minimum size = 1.2cm,rounded corners]
+
+\begin{tikzpicture}[auto,thick]
+    \draw[help lines] (0,0) grid (8,12);
+      
+    \foreach \y in {1,2}{
+        \pgfmathtruncatemacro{\z}{11 - 4 * \y}
+        \node [circ,fill=blue!10] (1\y) at (1,\z) {src \y};
+    } 
+    
+    \foreach \y in {1,2,3,4}{
+        \pgfmathtruncatemacro{\z}{10 - 2 * \y}
+        \node [circ,fill=red!10] (6\y) at (6,\z) {cust \y};
+    } 
+
+    %\foreach \y in {1,2}
+    \foreach \z in {1,2,3,4}{
+            \draw [->] (11) -- (6\z) node[midway,above] {$x_{1,\z}$};
+    }
+    \foreach \z in {1,2,3,4}{
+            \draw [->] (12) -- (6\z) node[midway,below] {$x_{2,\z}$};
+    }
+ 
+    
+\end{tikzpicture}
+
+\end{sansmath}
+\end{document}
