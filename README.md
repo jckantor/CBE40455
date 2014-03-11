@@ -34,7 +34,7 @@ The Mathprog models, Matlab files, and IPython notebooks listed below can be dow
 * [Getting Started with Discrete Event Simulation](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20Discrete%20Event%20Simulation.ipynb)
 * [Warehouse Fulfillment Operations](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Warehouse%20Fulfillment%20Operations.ipynb)
 
-## Uncertainty, Risk, and Diversification ## 
+## Uncertainty, Risk, and Diversification
 
 * [Newsvendor Problem](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Newsvendor%20Problem.ipynb)
 
