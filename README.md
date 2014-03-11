@@ -37,4 +37,5 @@ The Mathprog models, Matlab files, and IPython notebooks listed below can be dow
 ## Uncertainty, Risk, and Diversification
 
 * [Newsvendor Problem](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Newsvendor%20Problem.ipynb)
+* [Scenario Analysis for a Plant Expansion]()
 
