@@ -24,9 +24,9 @@ The Mathprog models, Matlab files, and IPython notebooks listed below can be dow
 
 ### Logistics ###
 
-* [Vehicle Routing Problem]()
-* [Vehicle Routine Problem with Time Windows]()
-* [Traveling Salesman Problem with Time Windows](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Traveling%20Salesman%20Problem%20with%20Tme%20Windows.ipynb)
+* [Vehicle Routing Problem](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Vehicle%20Routing.ipynb)
+* [Vehicle Routine Problem with Time Windows](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Vehicle%20Routine%20with%20Time%20Windows.ipynb)
+* [Traveling Salesman Problem with Time Windows](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Traveling%20Salesman%20Problem%20with%20Time%20Windows.ipynb)
 * [Pickup and Delivery]()
 
 ## Dynamics
