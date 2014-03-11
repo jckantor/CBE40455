@@ -27,7 +27,7 @@ The Mathprog models, Matlab files, and IPython notebooks listed below can be dow
 * [Vehicle Routing Problem](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Vehicle%20Routing.ipynb)
 * [Vehicle Routine Problem with Time Windows](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Vehicle%20Routine%20with%20Time%20Windows.ipynb)
 * [Traveling Salesman Problem with Time Windows](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Traveling%20Salesman%20Problem%20with%20Time%20Windows.ipynb)
-* [Pickup and Delivery]()
+* [Pickup and Delivery](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Pickup%20and%20Delivery%20.ipynb)
 
 ## Dynamics
 
@@ -37,5 +37,5 @@ The Mathprog models, Matlab files, and IPython notebooks listed below can be dow
 ## Uncertainty, Risk, and Diversification
 
 * [Newsvendor Problem](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Newsvendor%20Problem.ipynb)
-* [Scenario Analysis for a Plant Expansion]()
+* [Scenario Analysis for a Plant Expansion](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Scenario%20Analysis%20for%20a%20Plant%20Expansion.ipynb)
 
