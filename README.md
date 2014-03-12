@@ -41,4 +41,5 @@ The Mathprog models, Matlab files, and IPython notebooks listed below can be dow
 * [Newsvendor Problem](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Newsvendor%20Problem.ipynb)
 * [Scenario Analysis for a Plant Expansion](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Scenario%20Analysis%20for%20a%20Plant%20Expansion.ipynb)
 * [Risk Neutral Gambler](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Risk%20Neutral%20Gambler.ipynb)
+* [Risk Averse Gambler](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Risk%20Averse%20Gambler.ipynb)
 
