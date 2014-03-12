@@ -19,6 +19,7 @@ The Mathprog models, Matlab files, and IPython notebooks listed below can be dow
 
 ### Scheduling ##
 
+* [Critical Path Method](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Critical%20Path%20Method.ipynb)
 * [Machine Scheduling](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Machine%20Scheduling.ipynb)
 * [Jesuit Volunteers Corps](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Jesuit%20Volunteer%20Corps.ipynb)
 
