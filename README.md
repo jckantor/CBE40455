@@ -43,4 +43,5 @@ The Mathprog models, Matlab files, and IPython notebooks listed below can be dow
 * [Risk Neutral Gambler](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Risk%20Neutral%20Gambler.ipynb)
 * [Risk Averse Gambler](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Risk%20Averse%20Gambler.ipynb)
 * [Binomial Model for an American Call Option](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Binomial%20Model%20for%20an%20American%20Call%20Option.ipynb)
+* [Portfolio Optimization using Mean Absolute Deviation](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Portfolio%20Optimization%20using%20Mean%20Absolute%20Deviation.ipynb)
 
