@@ -1,0 +1,27 @@
+
+/* 
+Problem Data from Chapter 5 of Johannes Bisschop, "AIMMS Optimization Modeling",
+Paragon Decision Sciences, 1999. 
+*/
+
+param: CUSTOMERS: Demand :=
+   Lon   125        # London
+   Ber   175        # Berlin
+   Maa   225        # Maastricht
+   Ams   250        # Amsterdam
+   Utr   225        # Utrecht
+   Hag   200 ;      # The Hague
+
+param: SOURCES: Supply :=
+   Arn   550        # Arnhem
+   Gou   700 ;      # Gouda
+
+param T : Arn   Gou :=
+   Lon        .    2.5
+   Ber       2.5    .
+   Maa       1.6   2.0
+   Ams       1.4   1.0
+   Utr       0.8   1.0
+   Hag       1.4   0.8 ;
+
+end;

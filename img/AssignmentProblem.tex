@@ -16,17 +16,18 @@
         \pgfmathtruncatemacro{\z}{11 - 4 * \y}
         \node [circ,fill=blue!10] (1\y) at (1,\z) {src \y};
     } 
+    \node [circ] (ARN) at (1,7) {ARN};
     
-    \foreach \y in {1,2,3,4}{
-        \pgfmathtruncatemacro{\z}{10 - 2 * \y}
+    \foreach \y in {1,2,3,4,5,6}{
+        \pgfmathtruncatemacro{\z}{12 - 2 * \y}
         \node [circ,fill=red!10] (6\y) at (6,\z) {cust \y};
     } 
 
     %\foreach \y in {1,2}
-    \foreach \z in {1,2,3,4}{
+    \foreach \z in {1,2,3,4,5,6}{
             \draw [->] (11) -- (6\z) node[midway,above] {$x_{1,\z}$};
     }
-    \foreach \z in {1,2,3,4}{
+    \foreach \z in {1,2,3,4,5,6}{
             \draw [->] (12) -- (6\z) node[midway,below] {$x_{2,\z}$};
     }
  
