@@ -1,0 +1,73 @@
+\documentclass[tikz]{standalone}
+\usepackage{helvet}
+\usetikzlibrary{positioning}
+
+\usepackage[T1]{sansmath}
+\renewcommand{\familydefault}{\sfdefault}
+\normalfont
+
+\begin{document}
+\begin{sansmath}
+
+\tikzstyle{circ} = [circle,draw,thick,fill=blue!10,minimum width = 1.3cm,thick,inner sep=1pt, minimum height=1.2cm]
+
+\tikzstyle{box} = [rectangle,draw,thick,fill=yellow!10,inner sep = 2pt,above,minimum width = 1.3cm]
+
+\begin{tikzpicture}[auto]
+    \draw[help lines] (0,0) grid (20,10);
+    
+%    \node [circ] (T01) at  (0,4) {\shortstack{T01\\2}};
+    \node [circ] (T01) at (0,4) 
+        {\begin{tabular}{c|c} & \\ \hline  & \end{tabular}}; 
+        \draw (T01) ++(0,0.6) node [box] {T01 (2)};
+    \node [circ] (T02) at  (2,4) {\shortstack{T02\\16}};
+    \node [circ] (T03) at  (4,4) {\shortstack{T03\\9}};
+    \node [circ] (T04) at  (6,7) {\shortstack{T04\\8}};
+    \node [circ] (T05) at  (6,4) {\shortstack{T05\\10}};
+    \node [circ] (T06) at  (8,4) {\shortstack{T06\\6}};
+    \node [circ] (T07) at  (8,9) {\shortstack{T07\\2}};
+    \node [circ] (T08) at (10,4) {\shortstack{T08\\2}};
+    \node [circ] (T09) at  (9,6) {\shortstack{T09\\9}};
+    \node [circ] (T10) at (12,8) {\shortstack{T10\\5}};
+    \node [circ] (T11) at  (9,2.5) {\shortstack{T11\\3}};
+    \node [circ] (T12) at (11,6) {\shortstack{T12\\2}};
+    \node [circ] (T13) at (14,9) {\shortstack{T13\\1}};
+    \node [circ] (T14) at  (6,-0.5) {\shortstack{T14\\7}};
+    \node [circ] (T15) at  (8.5,-0.5) {\shortstack{T15\\4}};
+    \node [circ] (T16) at (11,2.5) {\shortstack{T16\\3}};
+    \node [circ] (T17) at (13,6) {\shortstack{T17\\9}};
+    \node [circ] (T18) at (15,6) {\shortstack{T18\\1}};
+    \node [circ] (Fin) at (18,6) {Fini};
+    
+    \draw [<-,ultra thick] (T02) -- (T01);
+    \draw [<-,ultra thick] (T03) -- (T02);
+    \draw [<-,ultra thick] (T04) -- (T02);
+    \draw [<-,ultra thick] (T05) -- (T03);
+    \draw [<-,ultra thick] (T06) -- (T04);
+    \draw [<-,ultra thick] (T06) -- (T05);
+    \draw [<-,ultra thick] (T07) -- (T04);
+    \draw [<-,ultra thick] (T08) -- (T06);
+    \draw [<-,ultra thick] (T09) -- (T04);
+    \draw [<-,ultra thick] (T09) -- (T06);
+    \draw [<-,ultra thick] (T10) -- (T04);
+    \draw [<-,ultra thick] (T11) -- (T06);
+    \draw [<-,ultra thick] (T12) -- (T09);
+    \draw [<-,ultra thick] (T13) -- (T07);
+    \draw [<-,ultra thick] (T14) -- (T02);
+    \draw [<-,ultra thick] (T15) -- (T04);
+    \draw [<-,ultra thick] (T15) -- (T14);
+    \draw [<-,ultra thick] (T16) -- (T08);
+    \draw [<-,ultra thick] (T16) -- (T11);
+    \draw [<-,ultra thick] (T16) -- (T14);
+    \draw [<-,ultra thick] (T17) -- (T12);
+    \draw [<-,ultra thick] (T18) -- (T17);
+    \draw [<-,ultra thick] (Fin) -- (T10);
+    \draw [<-,ultra thick] (Fin) -- (T13);
+    \draw [<-,ultra thick] (Fin) -- (T15);
+    \draw [<-,ultra thick] (Fin) -- (T16);
+    \draw [<-,ultra thick] (Fin) -- (T18);
+
+\end{tikzpicture}
+
+\end{sansmath}
+\end{document}
