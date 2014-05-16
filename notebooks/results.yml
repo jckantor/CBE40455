@@ -1,0 +1,43 @@
+# ==========================================================
+# = Solver Results                                         =
+# ==========================================================
+# ----------------------------------------------------------
+#   Problem Information
+# ----------------------------------------------------------
+Problem: 
+- Name: unknown
+  Lower bound: 0.666666666667
+  Upper bound: 0.666666666667
+  Number of objectives: 1
+  Number of constraints: 2
+  Number of variables: 3
+  Number of nonzeros: 3
+  Sense: minimize
+# ----------------------------------------------------------
+#   Solver Information
+# ----------------------------------------------------------
+Solver: 
+- Status: ok
+  Termination condition: optimal
+  Statistics: 
+    Branch and bound: 
+      Number of bounded subproblems: 0
+      Number of created subproblems: 0
+  Error rc: 0
+# ----------------------------------------------------------
+#   Solution Information
+# ----------------------------------------------------------
+Solution: 
+- number of solutions: 1
+  number of solutions displayed: 1
+- Gap: 0.0
+  Status: feasible
+  Objective: 
+    OBJ: 
+      Id: 0
+      Value: 0.666666666667
+  Variable: 
+    x[1]:
+      Id: 0
+      Value: 0.333333333333
+  Constraint: No nonzero values
