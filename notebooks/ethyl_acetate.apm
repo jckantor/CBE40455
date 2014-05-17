@@ -1,19 +1,21 @@
 
 Model
 
-  Variables
+  ! Parameters are initialized using estimates from NIST in units P[bar] and T[K]
+    
+  Parameters
     A = 4.22809
     B = 1245.702
     C = -55.189
-  End Variables
-    
-  Parameters
-    T >= 0
-    P >= 0
   End Parameters
     
+  Variables
+    T >= 0
+    P >= 0
+  End Variables
+    
   Equations
-    log10(P/100.0) = 10.0^(A - B/(T+c))
+    log10(P/100.0) = A - B/(T+C)
   End Equations
 
 End Model
