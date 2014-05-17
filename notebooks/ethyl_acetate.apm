@@ -1,0 +1,19 @@
+
+Model
+
+  Variables
+    a = 4.22809
+    b = 1245.702
+    c = -55.189
+  End Variables
+    
+  Parameters
+    t >= 0
+    p >= 0
+  End Parameters
+    
+  Equations
+    p = 100*(10^(a - b/(t+c)))
+  End Equations
+
+End Model
