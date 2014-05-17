@@ -13,7 +13,7 @@ Model
   End Parameters
     
   Equations
-    log10(P/100.0) = 10^(A - B/(T+c))
+    log10(P/100.0) = 10.0^(A - B/(T+c))
   End Equations
 
 End Model
