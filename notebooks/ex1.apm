@@ -1,14 +1,10 @@
 
-Model
+Variables
+  n[1] >= 0
+  n[2] >= 0
+End Variables
 
-  Variables
-    n[1] >= 0
-    n[2] >= 0
-  End Variables
-
-  Equations
-    100 = n[1] + n[2]
-    30 = 0.7*n[1] + 0.2*n[2]
-  End Equations
-    
-End Model
+Equations
+  100 = n[1] + n[2]
+  30 = 0.7*n[1] + 0.2*n[2]
+End Equations
