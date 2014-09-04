@@ -1,8 +1,50 @@
- Task     Rel     Dur     Due   Start  Finish Pastdue
-    A       2       5      10       6      11       1
-    B       5       6      21      14      20       0
-    C       4       8      15      22      30      15
-    D       0       4      10       2       6       0
-    E       0       2       5       0       2       0
-    F       8       3      15      11      14       0
-    G       9       2      22      20      22       0
+Problem:    stdin
+Rows:       6
+Columns:    6
+Non-zeros:  6
+Status:     OPTIMAL
+Objective:  0 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Requirement[Butane]
+                    NL         20000         20000                       < eps
+     2 Requirement[Petrol]
+                    NL         40000         40000                       < eps
+     3 Requirement[HO]
+                    NL         42000         42000                       < eps
+     4 Requirement[Diesel]
+                    NL         30000         30000                       < eps
+     5 Availability['1']
+                    B              0                      250000 
+     6 Availability['2']
+                    B              0                      400000 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 f[Butane]    B          20000             0               
+     2 f[Petrol]    B          40000             0               
+     3 f[HO]        B          42000             0               
+     4 f[Diesel]    B          30000             0               
+     5 f['1']       NL             0             0                       < eps
+     6 f['2']       NL             0             0                       < eps
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
