@@ -1,7 +1,7 @@
 Problem:    stdin
-Rows:       6
-Columns:    6
-Non-zeros:  6
+Rows:       13
+Columns:    16
+Non-zeros:  21
 Status:     OPTIMAL
 Objective:  0 (MINimum)
 
@@ -9,9 +9,9 @@ Objective:  0 (MINimum)
 ------ ------------ -- ------------- ------------- ------------- -------------
      1 Requirement[Butane]
                     NL         20000         20000                       < eps
-     2 Requirement[Petrol]
+     2 Requirement[Gasoline]
                     NL         40000         40000                       < eps
-     3 Requirement[HO]
+     3 Requirement[HeatingOil]
                     NL         42000         42000                       < eps
      4 Requirement[Diesel]
                     NL         30000         30000                       < eps
@@ -19,15 +19,45 @@ Objective:  0 (MINimum)
                     B              0                      250000 
      6 Availability['2']
                     B              0                      400000 
+     7 Distillation NS             0            -0             =         < eps
+     8 Reforming    NS             0            -0             =         < eps
+     9 CatCracking  NS             0            -0             =         < eps
+    10 Desulfurization
+                    NS             0            -0             =         < eps
+    11 GasolineBlending
+                    NS             0            -0             =         < eps
+    12 HOBlending   NS             0            -0             =         < eps
+    13 DieselBlending
+                    NS             0            -0             =         < eps
 
    No. Column name  St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 f[Butane]    B          20000             0               
-     2 f[Petrol]    B          40000             0               
-     3 f[HO]        B          42000             0               
-     4 f[Diesel]    B          30000             0               
-     5 f['1']       NL             0             0                       < eps
-     6 f['2']       NL             0             0                       < eps
+     1 flow[Butane] B          20000             0               
+     2 flow[Gasoline]
+                    B          40000             0               
+     3 flow[HeatingOil]
+                    B          42000             0               
+     4 flow[Diesel] B          30000             0               
+     5 flow['1']    NL             0             0                       < eps
+     6 flow['2']    NL             0             0                       < eps
+     7 flow[Naptha] NL             0             0                       < eps
+     8 flow[Residue]
+                    NL             0             0                       < eps
+     9 flow[GasOil] NL             0             0                       < eps
+    10 utilization[Distillation]
+                    B              0             0               
+    11 utilization[Reformer]
+                    B              0             0               
+    12 utilization[CatCracker]
+                    B              0             0               
+    13 utilization[Desulfurizer]
+                    B              0             0               
+    14 utilization[GasolineBlender]
+                    B          40000             0               
+    15 utilization[HOBlender]
+                    B          42000             0               
+    16 utilization[DieselBlender]
+                    B          30000             0               
 
 Karush-Kuhn-Tucker optimality conditions:
 
