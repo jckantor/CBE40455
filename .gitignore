@@ -1,5 +1,6 @@
-*.csv
+*checkpoint.ipynb
 
+*.csv
 
 *.acn
 *.acr
