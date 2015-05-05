@@ -5,6 +5,7 @@ The Mathprog models (.mod), Matlab files (.m), and IPython notebooks (.ipynb) li
 ### Getting Started
 
 * [Getting Started with GNU MathProg](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20GNU%20MathProg.ipynb)
+* [Getting Started with CVXPY](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20CVXPY.ipynb)
 * [Getting Started with APMonitor](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20APMonitor.ipynb)
 * [Getting Started with Discrete Event Simulation](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20Discrete%20Event%20Simulation.ipynb)
 
