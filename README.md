@@ -44,5 +44,6 @@ The Mathprog models (.mod), Matlab files (.m), and IPython notebooks (.ipynb) li
 
 * [Stochastic Price Models](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Stochastic%20Price%20Models.ipynb)
 * [Binomial Model for an American Call Option](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Binomial%20Model%20for%20an%20American%20Call%20Option.ipynb)
+* [Portfolio Optimization](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Portfolio%20Optimization.ipynb)
 * [Portfolio Optimization using Mean Absolute Deviation](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Portfolio%20Optimization%20using%20Mean%20Absolute%20Deviation.ipynb)
 
