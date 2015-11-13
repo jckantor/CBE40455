@@ -1,0 +1,123 @@
+\documentclass[tikz]{standalone}
+\usepackage{helvet}
+\usepackage[T1]{sansmath}
+\renewcommand{\familydefault}{\sfdefault}
+\normalfont
+
+\begin{document}
+\begin{sansmath}
+
+\tikzstyle{bbox} = [box,rounded corners,draw,thick,fill=blue!10,minimum size = 1.2cm,thick]
+\tikzstyle{box} = [rectangle,draw,thick,fill=red!30,minimum size = 1.2cm,thick]
+\tikzstyle{ebox} = [rectangle,draw,thick,fill=red!05,minimum size = 1.2cm,thick]
+
+\begin{tikzpicture}[auto]
+    %\draw[help lines] (0,0) grid (20,14);
+    
+    \node[rectangle] (title) at (10,14.5) {\large \bf A football team scores a late touchdown, now down by 8. Should they attempt the 2 pt conversion?};
+    
+    \node (txt1) at (2.5,13) {
+    	\shortstack{$\alpha$: Probability of XP success \\ \\
+    				$\beta$: Probability of 2P success}};
+
+    \node (txt2) at (7.5,9.5) {
+    	\shortstack{Choose 2P attempt when \\ \\
+    				$\beta(1-\beta) > \alpha(\alpha-2\beta)$ \\ \\
+    				or \\ \\
+    				$\beta > (2\alpha + 1 + \sqrt{4\alpha + 1})/2$\\ \\
+    				for $\alpha = 1$ then $\beta > 0.382$}};
+    
+    \node (txt3) at (9.5,5) {
+    	Assume $\beta < \alpha/2$};
+    	
+    \node [rectangle,fill=yellow!50,align=left] (txt4) at (2.5,1.5) 
+    	{Conclusion: To maximize \\ chances of winning, go for \\ two if 2 pt attempts succeed \\ more than 38.2\% of the time.};
+
+    \node [bbox] (c00) at (1,7) {-8};
+    
+    \node [box] (b01) at (3,9.5) {\shortstack{2P\\ \\ $\beta(1 + (\alpha - \beta/2)$}};
+    \node [box] (b02) at (3,4.5) {\shortstack{XP\\ \\ $(\alpha^2 + \beta(1-\alpha))/2$}};
+    
+    \node [bbox] (c03) at (6,12) {\shortstack{-6\\ \\ $(1+\alpha)/2$}};
+    \node [bbox] (c04) at (6,7) {\shortstack{-7\\ \\ $\alpha/2$}};
+    \node [bbox] (c05) at (6,2) {\shortstack{-8\\ \\ $\beta/2$}};
+    
+    \node [bbox] (c06) at (9,12) {\shortstack{0\\ \\ $(1+\alpha)/2$}};
+    \node [bbox] (c07) at (9,7) {\shortstack{-1\\ \\ $\alpha/2$}};
+    \node [bbox] (c08) at (9,2) {\shortstack{-2\\ \\ $\beta/2$}};
+    
+    \node [ebox] (b09) at (12,13) {\shortstack{2P\\ \\ $(1+\beta )/2$}};
+    \node [box] (b10) at (12,11) {\shortstack{XP\\ \\ $(1+\alpha )/2$}};
+    \node [ebox] (b11) at (12,8) {\shortstack{2P\\ \\ $\beta$}};
+    \node [box] (b12) at (12,6) {\shortstack{XP\\ \\ $\alpha/2$}};
+    \node [box] (b13) at (12,3) {\shortstack{2P\\ \\ $\beta/2$}};
+    \node [ebox] (b14) at (12,1) {\shortstack{XP\\ \\ 0}};
+
+    \node [bbox] (c15) at (16,13) {\shortstack{+2\\ \\ 1}};
+    \node [bbox] (c16) at (16,10) {\shortstack{+1\\ \\ 1}};
+    \node [bbox] (c17) at (16,7) {\shortstack{0\\ \\ 1/2}};
+    \node [bbox] (c18) at (16,4) {\shortstack{-1\\ \\ 0}};
+    \node [bbox] (c19) at (16,1) {\shortstack{-2\\ \\ 0}};
+    
+    \node [bbox] (c20) at (19,9) {W};
+    \node [bbox] (c21) at (19,5) {L};
+    
+    \node [bbox] (c22) at (18,7) {\shortstack{OT\\ \\ 1/2}};
+    
+    % annotations
+    \draw [->,thin, shorten >= 5pt] (txt2) -- (b01);
+    \draw [->,thin, shorten >= 5pt] (txt3) -- (b12);
+    \draw [->,thin, shorten >= 5pt] (txt3) -- (b11);
+    
+    % stage 1a
+    \draw [->,thick] (c00) -- (b01) node[midway,above] {};
+    \draw [->,thick] (c00) -- (b02) node[midway,above] {};
+    
+    % stage 1b
+    \draw [->,thick] (b01) -- (c03) node[near start,above] {$\beta$};
+    \draw [->,thick] (b01) -- (c05) node[near start,right] {$1-\beta$};
+    \draw [->,thick] (b02) -- (c04) node[near start,left] {$\alpha$};
+    \draw [->,thick] (b02) -- (c05) node[near start,left] {$1-\alpha$};
+    
+    % stage 2
+    \draw [->,thick] (c03) -- (c06) node[midway,above] {TD};
+    \draw [->,thick] (c04) -- (c07) node[midway,above] {TD};
+    \draw [->,thick] (c05) -- (c08) node[midway,above] {TD};
+    
+    % stage 3a
+    \draw [->,thick] (c06) -- (b09) node[midway,above] {};
+    \draw [->,thick] (c06) -- (b10) node[midway,above] {};
+    \draw [->,thick] (c07) -- (b11) node[midway,above] {};
+    \draw [->,thick] (c07) -- (b12) node[midway,above] {};
+    \draw [->,thick] (c08) -- (b13) node[midway,above] {};
+    \draw [->,thick] (c08) -- (b14) node[midway,above] {};
+
+    % stage 3b
+    \draw [->,thick] (b09) -- (c15) node[near start,below] {$\beta$};
+    \draw [->,thick] (b09) -- (c17) node[near start,right] {$1-\beta$};
+    \draw [->,thick] (b10) -- (c16) node[near start,below] {$\alpha$};
+    \draw [->,thick] (b10) -- (c17) node[near start,left] {$1-\alpha$};
+    \draw [->,thick] (b11) -- (c16) node[near start,below] {$\beta$};
+    \draw [->,thick] (b11) -- (c18) node[near start,above] {$1-\beta$};
+    \draw [->,thick] (b12) -- (c17) node[near start,below] {$\alpha$};
+    \draw [->,thick] (b12) -- (c18) node[near start,above] {$1-\alpha$};
+    \draw [->,thick] (b13) -- (c17) node[near start,below] {$\beta$};
+    \draw [->,thick] (b13) -- (c19) node[near start,above] {$1-\beta$};
+    \draw [->,thick] (b14) -- (c18) node[near start,below] {$\alpha$};
+    \draw [->,thick] (b14) -- (c19) node[near start,above] {$1-\alpha$};
+
+    % stage 4
+    \draw [->,thick] (c15) -- (c20) node[midway,above] {1};
+    \draw [->,thick] (c16) -- (c20) node[midway,above] {1};
+    \draw [->,thick] (c17) -- (c22) node[midway,above] {1};
+    \draw [->,thick] (c18) -- (c21) node[midway,above] {1};
+    \draw [->,thick] (c19) -- (c21) node[midway,above] {1};
+    
+    % stage 5
+    \draw [->,thick] (c22) -- (c20) node[midway,right] {$\frac{1}{2}$};
+    \draw [->,thick] (c22) -- (c21) node[midway,right] {$\frac{1}{2}$};
+
+\end{tikzpicture}
+
+\end{sansmath}
+\end{document}
