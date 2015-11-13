@@ -39,7 +39,7 @@ The Mathprog models (.mod), Matlab files (.m), and IPython notebooks (.ipynb) li
 * [Scenario Analysis for a Plant Expansion](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Scenario%20Analysis%20for%20a%20Plant%20Expansion.ipynb)
 * [Risk Neutral Gambler](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Risk%20Neutral%20Gambler.ipynb)
 * [Risk Averse Gambler](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Risk%20Averse%20Gambler.ipynb)
-* [Points After Touchdown Decision](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Point%20after%20Touchdown%20Decision.ipynb)
+* [Points After Touchdown Decision](http://nbviewer.ipython.org/github/jckantor/CBE40455/blob/master/notebooks/Points%20after%20Touchdown%20Decision.ipynb)
 
 ### Risk and Diversification
 
