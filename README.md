@@ -51,5 +51,7 @@ The Mathprog models (.mod), Matlab files (.m), and IPython notebooks (.ipynb) li
 ### Student Projects
 
 * [Distillation Blending and Cutpoint Temperature Optimization]
+* [Inventory Management for a Distillery]
+* [Inventory Management of Baked Goods for a Coffee Shop]
 
 
