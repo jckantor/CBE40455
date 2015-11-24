@@ -12,5 +12,6 @@ USER main
 # Install python libraries
 
 RUN pip install ipywidgets
+RUN pip install cvxopt
 RUN pip install cvxpy
-RUN pip install simpy
+RUN pip install simply
