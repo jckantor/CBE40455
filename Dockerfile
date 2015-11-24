@@ -15,4 +15,4 @@ USER main
 RUN pip install ipywidgets
 RUN pip install cvxopt
 RUN pip install cvxpy
-RUN pip install simply
+RUN pip install simpy
