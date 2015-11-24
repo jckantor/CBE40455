@@ -9,5 +9,8 @@ RUN apt-get install -y glpk-utils
 
 USER main
 
-# Install ipywidgets library
+# Install python libraries
+
 RUN pip install ipywidgets
+RUN pip install cvxpy
+RUN pip install simpy
