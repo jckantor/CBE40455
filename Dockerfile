@@ -6,6 +6,7 @@ USER root
 
 RUN apt-get update
 RUN apt-get install -y glpk-utils
+RUN apt-get install -y liblapack-dev
 
 USER main
 
