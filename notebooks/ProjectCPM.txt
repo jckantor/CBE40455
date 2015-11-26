@@ -1,0 +1,27 @@
+PROJECT LENGTH =       64
+
+CRITICAL PATH
+  TASK  DUR    Start   Finish  Description
+   T01    2        0        2  Installing the contruction site
+   T02   16        2       18  Terracing                
+   T03    9       18       27  Constructing the foundations
+   T05   10       27       37  Erecting the basement    
+   T06    6       37       43  Main floor               
+   T09    9       43       52  Constructing the roof    
+   T12    2       52       54  Sealing the roof         
+   T17    9       54       63  Lawn and sports accessories
+   T18    1       63       64  Handing over the building
+
+NON-CRITICAL TASKS
+            Earliest Earliest   Latest   Latest 
+  TASK  DUR    Start   Finish    Start   Finish    Slack  Description
+   T04    8       18       26       29       37       11  Access roads and other networks
+   T07    2       26       28       61       63       35  Dividing up the changing rooms
+   T10    5       26       31       59       64       33  Lighting the stadium     
+   T14    7       18       25       53       60       35  Constructing the ticket office
+   T15    4       26       30       60       64       34  Secondary access roads   
+   T13    1       28       29       63       64       35  Finishing the changing rooms
+   T08    2       43       45       59       61       16  Electrifying the terraces
+   T11    3       43       46       58       61       15  Installing the terraces  
+   T16    3       46       49       61       64       15  Means of signaling       
+

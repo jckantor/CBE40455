@@ -18,3 +18,4 @@ RUN pip install ipywidgets
 RUN pip install simpy
 RUN pip install cvxopt
 RUN pip install cvxpy
+RUN pip install networkx
