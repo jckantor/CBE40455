@@ -1,0 +1,24 @@
+
+Routing for Plane 1
+-------------------
+Depart                Arrive                     Dist.   
+Plane 1       ORD     St. Louis     STL          415.6 km
+St. Louis     STL     Atlanta       ATL          779.0 km
+Atlanta       ATL     New York      JFK         1222.1 km
+New York      JFK     Boston        BOS          300.0 km
+Boston        BOS     Chicago       ORD         1391.1 km
+Chicago       ORD     Plane 1       ORD_           0.0 km
+                                                ---------
+                     GC Distance Traveled:      4107.8 km
+
+
+Routing for Plane 2
+-------------------
+Depart                Arrive                     Dist.   
+Plane 2       DFW     Dallas        DFW            0.0 km
+Dallas        DFW     Los Angeles   LAX         1983.2 km
+Los Angeles   LAX     Denver        DEN         1385.1 km
+Denver        DEN     Plane 2       DRW_        1032.1 km
+                                                ---------
+                     GC Distance Traveled:      4400.4 km
+
