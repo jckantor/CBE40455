@@ -5,8 +5,8 @@ MAINTAINER Jeffrey Kantor <Kantor.1@nd.edu>
 USER root
 
 RUN apt-get update && apt-get install -y \
-     glpk-utils \
-     liblapack-dev
+  && glpk-utils \
+  && liblapack-dev \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
