@@ -1,0 +1,7 @@
+Food,Servings
+"Corn",1.94444444444445
+"Corn",1.94444444444445
+"2% Milk",10
+"2% Milk",10
+"Wheat Bread",10
+"Wheat Bread",10

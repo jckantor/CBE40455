@@ -1,6 +1,0 @@
-data;
-
-param a := 2.3;
-param b := 0.4;
-
-end;

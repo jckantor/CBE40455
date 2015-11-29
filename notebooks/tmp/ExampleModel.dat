@@ -1,0 +1,6 @@
+data;
+
+param a := 12.3;
+param b := 10.4;
+
+end;
