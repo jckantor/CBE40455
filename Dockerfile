@@ -7,7 +7,7 @@ USER root
 RUN apt-get update
 RUN apt-get install -y glpk-utils
 RUN apt-get install -y liblapack-dev
-RUN apt-get clean \
+RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
 USER main
