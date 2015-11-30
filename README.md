@@ -11,9 +11,9 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 
 ### Getting Started
 
-* [Getting Started with GNU MathProg](blob/master/notebooks/Getting%20Started%20with%20GNU%20MathProg.ipynb) (MathProg)
-* [Getting Started with CVXPY](notebooks/Getting%20Started%20with%20CVXPY.ipynb)
-* [Getting Started with Discrete Event Simulation](notebooks/Getting%20Started%20with%20Discrete%20Event%20Simulation.ipynb)
+* [Getting Started with GNU MathProg](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20GNU%20MathProg.ipynb) (MathProg)
+* [Getting Started with CVXPY](https://github.com/jckantor/CBE40455/notebooks/Getting%20Started%20with%20CVXPY.ipynb)
+* [Getting Started with Discrete Event Simulation](https://github.com/jckantor/CBE40455/notebooks/Getting%20Started%20with%20Discrete%20Event%20Simulation.ipynb)
 
 ### Linear Optimization
 
