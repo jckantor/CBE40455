@@ -2,6 +2,13 @@
 
 The Mathprog models (.mod), Matlab files (.m), and IPython notebooks (.ipynb) listed below can be downloaded individually. Click on the link to view, then click on the download button to save on your computer.
 
+This collection can be opened directly in a Docker container on [mybinder.org](http://mybinder.org). Click on this button 
+
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/jckantor/CBE40455)
+
+[mybinder.org](http://mybinder.org) provides a live version of these notebooks that can be run, edited, and downloaded for your use under terms of the Creative Commons License. Unfortunately, persistent file storage is not available through this service, so you need to be sure and download any changes or new notebooks that you may create.
+
+
 ### Getting Started
 
 * [Getting Started with GNU MathProg](notebooks/Getting%20Started%20with%20GNU%20MathProg.ipynb) (MathProg)
