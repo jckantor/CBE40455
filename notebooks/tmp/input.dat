@@ -1,0 +1,16 @@
+
+data;
+
+param bigM := 20;
+
+param: PRODUCTS: pLength demand :=
+        '7m'        7        3
+        '6m'        6        2
+        '4m'        4        6
+        '3m'        3        1 ;
+  
+param: RAWMATERIALS: rLength avail := 
+       '15m'       15        3
+       '10m'       10        3 ;
+  
+end;

@@ -1,0 +1,32 @@
+Cutting Plan
+    Raw Material 15m 
+        Piece 15m-1 : Remainder =  0.00 : Cut product pieces 7m-3 4m-1 4m-4 
+        Piece 15m-2 : Remainder =  0.00 : Cut product pieces 7m-1 4m-2 4m-3 
+        Piece 15m-3 : Remainder = 15.00 : Cut product pieces 
+
+    Raw Material 10m 
+        Piece 10m-1 : Remainder =  0.00 : Cut product pieces 6m-1 4m-5 
+        Piece 10m-2 : Remainder =  0.00 : Cut product pieces 6m-2 4m-6 
+        Piece 10m-3 : Remainder =  0.00 : Cut product pieces 7m-2 3m-1 
+
+Production Plan
+    Product 7m 
+        Piece 7m-1 : Cut from stock piece 15m-2 
+        Piece 7m-2 : Cut from stock piece 10m-3 
+        Piece 7m-3 : Cut from stock piece 15m-1 
+
+    Product 6m 
+        Piece 6m-1 : Cut from stock piece 10m-1 
+        Piece 6m-2 : Cut from stock piece 10m-2 
+
+    Product 4m 
+        Piece 4m-1 : Cut from stock piece 15m-1 
+        Piece 4m-2 : Cut from stock piece 15m-2 
+        Piece 4m-3 : Cut from stock piece 15m-2 
+        Piece 4m-4 : Cut from stock piece 15m-1 
+        Piece 4m-5 : Cut from stock piece 10m-1 
+        Piece 4m-6 : Cut from stock piece 10m-2 
+
+    Product 3m 
+        Piece 3m-1 : Cut from stock piece 10m-3 
+
