@@ -14,6 +14,7 @@ USER main
 
 # Install python libraries
 
+RUN pip install --upgrade pandas-datareader
 RUN pip install ipywidgets
 RUN pip install simpy
 RUN pip install cvxopt
