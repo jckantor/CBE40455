@@ -30,12 +30,12 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 
 ### Logistics
 
-* [Assignment Problems](notebooks/Assignment%20Problems.ipynb) (MathProg)
+* [Assignment Problems](https://github.com/jckantor/CBE40455/blob/master/notebooks/Assignment%20Problems.ipynb) (MathProg)
 * [Vehicle Routing Problem](https://github.com/jckantor/CBE40455/blob/master/notebooks/Vehicle%20Routing.ipynb) (MathProg)
 * [Vehicle Routine Problem with Time Windows](https://github.com/jckantor/CBE40455/blob/master/notebooks/Vehicle%20Routine%20with%20Time%20Windows.ipynb) (MathProg)
 * [Traveling Salesman Problem with Time Windows](https://github.com/jckantor/CBE40455/blob/master/notebooks/Traveling%20Salesman%20Problem%20with%20Time%20Windows.ipynb) (MathProg)
 * [Pickup and Delivery](https://github.com/jckantor/CBE40455/blob/master/notebooks/Pickup%20and%20Delivery%20.ipynb) (MathProg)
-* [Stock Cutting](notebooks/Stock%20Cutting.ipynb) (MathProg)
+* [Stock Cutting](https://github.com/jckantor/CBE40455/blob/master/notebooks/Stock%20Cutting.ipynb) (MathProg)
 
 ### Dynamics
 
