@@ -13,7 +13,6 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 
 * [Getting Started with GNU MathProg](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20GNU%20MathProg.ipynb) (MathProg)
 * [Getting Started with CVXPY](https://github.com/jckantor/CBE40455/notebooks/Getting%20Started%20with%20CVXPY.ipynb)
-* [Getting Started with Discrete Event Simulation](https://github.com/jckantor/CBE40455/notebooks/Getting%20Started%20with%20Discrete%20Event%20Simulation.ipynb)
 
 ### Linear Optimization
 
@@ -37,8 +36,10 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 * [Pickup and Delivery](https://github.com/jckantor/CBE40455/blob/master/notebooks/Pickup%20and%20Delivery%20.ipynb) (MathProg)
 * [Stock Cutting](https://github.com/jckantor/CBE40455/blob/master/notebooks/Stock%20Cutting.ipynb) (MathProg)
 
-### Dynamics
+### Modeling Discrete Events
 
+* [Getting Started with Discrete Event Simulation](https://github.com/jckantor/CBE40455/notebooks/Getting%20Started%20with%20Discrete%20Event%20Simulation.ipynb)
+* [DES Simulation of a Batch Process]()
 * [Warehouse Fulfillment Operations](https://github.com/jckantor/CBE40455/blob/master/notebooks/Warehouse%20Fulfillment%20Operations.ipynb)
 
 ### Optimization under Uncertainty
