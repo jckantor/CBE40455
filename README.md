@@ -38,7 +38,7 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 
 ### Modeling Discrete Events
 
-* [Getting Started with Discrete Event Simulation](https://github.com/jckantor/CBE40455/notebooks/Getting%20Started%20with%20Discrete%20Event%20Simulation.ipynb)
+* [Getting Started with Discrete Event Simulation](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20Discrete%20Event%20Simulation.ipynb)
 * [DES Simulation of a Batch Process]()
 * [Warehouse Fulfillment Operations](https://github.com/jckantor/CBE40455/blob/master/notebooks/Warehouse%20Fulfillment%20Operations.ipynb)
 
