@@ -8,14 +8,16 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 
 [mybinder.org](http://mybinder.org) provides a live version of these notebooks that can be run, edited, and downloaded for your use under terms of the Creative Commons License. Unfortunately, persistent file storage is not available through this service, so you need to be sure and download any changes or new notebooks that you may create.
 
+### Modeling Discrete Events
 
-### Getting Started
-
-* [Getting Started with GNU MathProg](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20GNU%20MathProg.ipynb) (MathProg)
-* [Getting Started with CVXPY](https://github.com/jckantor/CBE40455/notebooks/Getting%20Started%20with%20CVXPY.ipynb)
+* [Getting Started with Discrete Event Simulation](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20Discrete%20Event%20Simulation.ipynb)
+* [DES Simulation of a Batch Process](https://github.com/jckantor/CBE40455/blob/master/notebooks/DES%20Simulation%20of%20a%20Batch%20Process.ipynb)
+* [Warehouse Fulfillment Operations](https://github.com/jckantor/CBE40455/blob/master/notebooks/Warehouse%20Fulfillment%20Operations.ipynb)
 
 ### Linear Optimization
 
+* [Getting Started with GNU MathProg](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20GNU%20MathProg.ipynb) (MathProg)
+* [Getting Started with CVXPY](https://github.com/jckantor/CBE40455/notebooks/Getting%20Started%20with%20CVXPY.ipynb)
 * [Production Model with Constraints](https://github.com/jckantor/CBE40455/blob/master/notebooks/Production%20Models%20with%20Constraints.ipynb) (MathProg)
 * [Transportation Networks](https://github.com/jckantor/CBE40455/blob/master/notebooks/Transportation%20Networks.ipynb) (MathProg)
 * [Data Reconciliation for a Heat Exchanger with By-pass](https://github.com/jckantor/CBE40455/blob/master/notebooks/Data%20Reconciliation.ipynb)] (MathProg)
@@ -36,11 +38,6 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 * [Pickup and Delivery](https://github.com/jckantor/CBE40455/blob/master/notebooks/Pickup%20and%20Delivery%20.ipynb) (MathProg)
 * [Stock Cutting](https://github.com/jckantor/CBE40455/blob/master/notebooks/Stock%20Cutting.ipynb) (MathProg)
 
-### Modeling Discrete Events
-
-* [Getting Started with Discrete Event Simulation](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20Discrete%20Event%20Simulation.ipynb)
-* [DES Simulation of a Batch Process](https://github.com/jckantor/CBE40455/blob/master/notebooks/DES%20Simulation%20of%20a%20Batch%20Process.ipynb)
-* [Warehouse Fulfillment Operations](https://github.com/jckantor/CBE40455/blob/master/notebooks/Warehouse%20Fulfillment%20Operations.ipynb)
 
 ### Optimization under Uncertainty
 
