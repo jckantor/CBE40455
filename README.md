@@ -20,6 +20,7 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 ### Linear Optimization
 
 * [Getting Started with CVXPY](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20CVXPY.ipynb)
+* [Getting Started with Gurobi](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20Gurobi.ipynb)
 * [Getting Started with GNU MathProg](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20GNU%20MathProg.ipynb) (MathProg)
 * [Production Model with Constraints](https://github.com/jckantor/CBE40455/blob/master/notebooks/Production%20Models%20with%20Constraints.ipynb) (MathProg)
 * [Transportation Networks](https://github.com/jckantor/CBE40455/blob/master/notebooks/Transportation%20Networks.ipynb) (MathProg)
