@@ -60,6 +60,19 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 * [Portfolio Optimization using Mean Absolute Deviation](https://github.com/jckantor/CBE40455/blob/master/notebooks/Portfolio%20Optimization%20using%20Mean%20Absolute%20Deviation.ipynb) (MathProg)
 * [MAD Portfolio Optimization](https://github.com/jckantor/CBE40455/blob/master/notebooks/MAD%20Portfolio%20Optimization.ipynb)
 
+### Optimization in Google Sheets
+
+* [Production Planning with Constraints (Google Sheet)](https://docs.google.com/spreadsheets/d/1StL_Z-GnE23LuS93mr9fybxmcAopFuWVvGTauJgvxng/edit?usp=sharing)
+* [SEMD Refinery (Google Sheet)](https://docs.google.com/spreadsheets/d/1x-DX4rnt6LCLiDpuSEwZDF0zs5mpVrpcjlU5kb2dmUA/edit?usp=sharing)
+* [Transportation Network Optimization (Google Sheet)](https://docs.google.com/spreadsheets/d/1-loaUHVteMnf09fKJy9F03x51OfnUvvbiLgX4k_eaPs/edit?usp=sharing)
+* [Project Management with the Critical Path (Google Sheet)](https://docs.google.com/spreadsheets/d/170KbWCvI-9eonNeGbZhDq3GyvmUiR3aSjtUzXT3Cono/edit?usp=sharing)
+* [Machine Bottleneck Scheduling (Google Sheet)](https://docs.google.com/spreadsheets/d/1e3a0hSMW_Oht56hB2YtIZMjh4OZTMOQpTUYuq-JGJ40/edit?usp=sharing)
+* [Stochastic Programming: Two Stage Solution for the Newsvendor Problem (Google Sheet)](https://docs.google.com/spreadsheets/d/1I6bt5_QUz9-toGgiVc2Y5fHlHNJtevChd-0-2R3jyrI/edit?usp=sharing)
+* [Knapsack Problem (Google Sheet)](https://docs.google.com/spreadsheets/d/1KXEmKDCyUH-sQEbmSN4CMhcQtO88npDcgTK2b4CRVdI/edit?usp=sharing)
+* [Stock Cutting (Google Sheet)](https://docs.google.com/spreadsheets/d/1Djn5eApF1rbJOV5CZpY_YrnYFeEH5FuCAGjj0ShXKAc/edit?usp=sharing)
+* [Soduko Solver 4x4 (Google Sheet)](https://docs.google.com/spreadsheets/d/1XMkn64lSKxzxcSeIDBJjEGiI5eUU8f90gEiPQ2JKLOk/edit?usp=sharing)
+
+
 ### Student Projects
 
 * [Distillation Blending and Cutpoint Temperature Optimization]
