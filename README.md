@@ -25,6 +25,7 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 * [Production Model with Constraints (MathProg)](https://github.com/jckantor/CBE40455/blob/master/notebooks/Production%20Models%20with%20Constraints%20(MathProg).ipynb)
 * [Production Model with Constraints (Pyomo)](https://github.com/jckantor/CBE40455/blob/master/notebooks/Production%20Models%20with%20Constraints%20(Pyomo).ipynb)
 * [Transportation Networks](https://github.com/jckantor/CBE40455/blob/master/notebooks/Transportation%20Networks.ipynb) (MathProg)
+* [Transportation Networks (Pyomo)](https://github.com/jckantor/CBE40455/blob/master/notebooks/Transportation%20Networks%20(Pyomo).ipynb)
 * [Data Reconciliation for a Heat Exchanger with By-pass](https://github.com/jckantor/CBE40455/blob/master/notebooks/Data%20Reconciliation.ipynb)] (MathProg)
 
 ### Scheduling
