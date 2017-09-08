@@ -29,7 +29,7 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 ### Scheduling
 
 * [Critical Path Method](https://github.com/jckantor/CBE40455/blob/master/notebooks/Critical%20Path%20Method.ipynb) (MathProg)
-* [Machine Bottleneck](https://github.com/jckantor/CBE40455/blob/master/notebooks/Machine%20Bottleneck.ipynb) (MathProg)
+* [Machine Bottleneck (Pyomo)](https://github.com/jckantor/CBE40455/blob/master/notebooks/Machine%20Bottleneck%20(Pyomo).ipynb)
 * [Job Shop Scheduling](https://github.com/jckantor/CBE40455/blob/master/notebooks/Job%20Shop%20Scheduling.ipynb) (MathProg)
 * [Jesuit Volunteers Corps](https://github.com/jckantor/CBE40455/blob/master/notebooks/Jesuit%20Volunteer%20Corps.ipynb) (MathProg)
 
