@@ -1,0 +1,23 @@
+
+=====================================================================
+CREATING GROUPS
+Creating group: Basemaps  ##  success
+Creating group: Central Services  ##  success
+Creating group: Compliance  ##  success
+Creating group: Customer Service, Finance, Billing and Accounting  ##  success
+Creating group: Demographic Content  ##  success
+=====================================================================
+CREATING USER ACCOUNTS
+Creating user: smith.collins ## success  ##
+	 Adding to groups:  # Basemaps #  Central Services # 
+Creating user: johnson.stewart ## success  ##
+	 Adding to groups:  # Basemaps #  Central Services # 
+Creating user: williams.sanchez ## success  ##
+	 Adding to groups:  # Basemaps #  Customer Service # 
+....
+=====================================================================
+PUBLISHING USER CONTENT
+Publishing user_content/KS.csv # webmaps ## success. Assigning to:   #  smith.collins
+Publishing user_content/NV.csv # webmaps ## success. Assigning to:   #  johnson.stewart
+Publishing user_content/IN.csv # webmaps ## success. Assigning to:   #  williams.sanchez
+....

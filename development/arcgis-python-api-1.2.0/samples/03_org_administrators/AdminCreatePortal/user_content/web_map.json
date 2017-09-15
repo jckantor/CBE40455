@@ -1,0 +1,30 @@
+{
+    "operationalLayers": [
+        {
+            "layerType": "",
+            "url": "",
+            "visibility": true,
+            "opacity": 1,
+            "title": "",
+            "itemId": ""
+        }
+    ],
+    "baseMap": {
+        "baseMapLayers": [
+            {
+                "id": "defaultBasemap",
+                "layerType": "ArcGISTiledMapServiceLayer",
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+                "visibility": true,
+                "opacity": 1,
+                "title": "World Topographic Map"
+            }
+        ],
+        "title": "Topographic"
+    },
+    "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+    },
+    "version": "2.5"
+}

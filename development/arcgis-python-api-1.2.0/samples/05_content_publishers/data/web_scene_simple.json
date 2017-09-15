@@ -1,0 +1,39 @@
+{
+    "operationalLayers": [
+        {
+            "itemId": "",
+            "title": "",
+            "visibility": true,
+            "opacity": 1,
+            "url": "",
+            "layerType": ""
+        }
+    ],
+    "baseMap": {
+        "baseMapLayers": [
+            {
+                "id": "933075fa973f49948a88b84dae743704",
+                "visibility": true,
+                "opacity": 1,
+                "layerDefinition": {},
+                "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer",
+                "layerType": "ArcGISTiledMapServiceLayer"
+            }
+        ],
+        "title": "World Street Map",
+        "elevationLayers": [
+            {
+                "url": "https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer",
+                "id": "globalElevation_0",
+                "layerType": "ArcGISTiledElevationServiceLayer"
+            }
+        ]
+    },
+    "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+    },
+    "version": "1.4",
+    "viewingMode": "global",
+    "tables": []
+}

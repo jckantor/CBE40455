@@ -1,0 +1,366 @@
+
+=====================================================================
+RUNNING CLEANUP
+Deleting groups
+---------------
+
+Deleting Basemaps  ##  success
+Deleting Central Services  ##  success
+Deleting Compliance  ##  success
+Deleting Customer Service, Finance, Billing and Accounting  ##  success
+Deleting Demographic Content  ##  success
+
+Deleting user content
+---------------------
+
+User : adams.powell # 
+Deleting : Adams Powell response locations # True | 
+Deleting : SC # True | 
+Deleting : SC # True | empty
+User : admin # skipped
+User : allen.price # 
+Deleting : OH # True | 
+Deleting : Allen Price response locations # True | 
+Deleting : OH # True | empty
+User : anderson.bailey # empty
+User : baker.long # 
+Deleting : WY # True | 
+Deleting : Baker Long response locations # True | 
+Deleting : WY # True | empty
+User : brown.rogers # 
+Deleting : AR # True | 
+Deleting : Brown Rogers response locations # True | 
+Deleting : AR # True | empty
+User : campbell.bryant # 
+Deleting : ND # True | 
+Deleting : ND # True | 
+Deleting : Campbell Bryant response locations # True | empty
+User : carter.flores # 
+Deleting : PR # True | 
+Deleting : Carter Flores response locations # True | 
+Deleting : PR # True | empty
+User : clark.ramirez # 
+Deleting : NJ # True | 
+Deleting : NJ # True | 
+Deleting : Clark Ramirez response locations # True | empty
+User : davis.reed # 
+Deleting : FL # True | 
+Deleting : FL # True | 
+Deleting : Davis Reed response locations # True | empty
+User : edwards.griffin # 
+Deleting : Edwards Griffin response locations # True | 
+Deleting : CO # True | 
+Deleting : CO # True | empty
+User : esri_boundaries # skipped
+User : esri_demographics # skipped
+User : esri_livingatlas # skipped
+User : esri_nav # skipped
+User : evans.russell # 
+Deleting : Evans Russell response locations # True | 
+Deleting : MN # True | 
+Deleting : MN # True | empty
+User : garcia.torres # 
+Deleting : MA # True | 
+Deleting : MA # True | 
+Deleting : Garcia Torres response locations # True | empty
+User : gonzalez.patterson # 
+Deleting : UT # True | 
+Deleting : Gonzalez Patterson response locations # True | 
+Deleting : UT # True | empty
+User : green.perry # 
+Deleting : ME # True | 
+Deleting : Green Perry response locations # True | 
+Deleting : ME # True | empty
+User : hall.sanders # 
+Deleting : MT # True | 
+Deleting : Hall Sanders response locations # True | 
+Deleting : MT # True | empty
+User : harris.cox # 
+Deleting : MI # True | 
+Deleting : Harris Cox response locations # True | 
+Deleting : MI # True | empty
+User : hernandez.wood # 
+Deleting : KY # True | 
+Deleting : KY # True | 
+Deleting : Hernandez Wood response locations # True | empty
+User : hill.coleman # 
+Deleting : Hill Coleman response locations # True | 
+Deleting : VT # True | 
+Deleting : VT # True | empty
+User : jackson.cooper # 
+Deleting : Jackson Cooper response locations # True | 
+Deleting : WI # True | 
+Deleting : WI # True | empty
+User : johnson.stewart # 
+Deleting : NV # True | 
+Deleting : Johnson Stewart response locations # True | 
+Deleting : NV # True | empty
+User : jones.morris # 
+Deleting : NC # True | 
+Deleting : Jones Morris response locations # True | 
+Deleting : NC # True | empty
+User : king.barnes # 
+Deleting : GA # True | 
+Deleting : GA # True | 
+Deleting : King Barnes response locations # True | empty
+User : lee.brooks # 
+Deleting : Lee Brooks response locations # True | 
+Deleting : CT # True | 
+Deleting : CT # True | empty
+User : lewis.watson # 
+Deleting : PA # True | 
+Deleting : Lewis Watson response locations # True | 
+Deleting : PA # True | empty
+User : lopez.henderson # 
+Deleting : MD # True | 
+Deleting : MD # True | 
+Deleting : Lopez Henderson response locations # True | empty
+User : martin.howard # 
+Deleting : VA # True | 
+Deleting : VA # True | 
+Deleting : Martin Howard response locations # True | empty
+User : martinez.peterson # 
+Deleting : Martinez Peterson response locations # True | 
+Deleting : AL # True | 
+Deleting : AL # True | empty
+User : miller.cook # 
+Deleting : Miller Cook response locations # True | 
+Deleting : NH # True | 
+Deleting : NH # True | empty
+User : mitchell.washington # 
+Deleting : Mitchell Washington response locations # True | 
+Deleting : SD # True | 
+Deleting : SD # True | empty
+User : moore.bell # 
+Deleting : AZ # True | 
+Deleting : Moore Bell response locations # True | 
+Deleting : AZ # True | empty
+User : nelson.hughes # 
+Deleting : Nelson Hughes response locations # True | 
+Deleting : NE # True | 
+Deleting : NE # True | empty
+User : parker.alexander # 
+Deleting : OR # True | 
+Deleting : Parker Alexander response locations # True | 
+Deleting : OR # True | empty
+User : perez.butler # 
+Deleting : CA # True | 
+Deleting : CA # True | 
+Deleting : Perez Butler response locations # True | empty
+User : phillips.gonzales # 
+Deleting : MO # True | 
+Deleting : Phillips Gonzales response locations # True | 
+Deleting : MO # True | empty
+User : roberts.simmons # 
+Deleting : NM # True | 
+Deleting : NM # True | 
+Deleting : Roberts Simmons response locations # True | empty
+User : robinson.gray # 
+Deleting : IL # True | 
+Deleting : Robinson Gray response locations # True | 
+Deleting : IL # True | empty
+User : rodriguez.james # 
+Deleting : DE # True | 
+Deleting : Rodriguez James response locations # True | 
+Deleting : DE # True | empty
+User : scott.jenkins # 
+Deleting : AK # True | 
+Deleting : Scott Jenkins response locations # True | 
+Deleting : AK # True | empty
+User : smith.collins # 
+Deleting : KS # True | 
+Deleting : Smith Collins response locations # True | 
+Deleting : KS # True | empty
+User : taylor.murphy # 
+Deleting : Taylor Murphy response locations # True | 
+Deleting : LA # True | 
+Deleting : LA # True | empty
+User : thomas.rivera # 
+Deleting : MS # True | 
+Deleting : Thomas Rivera response locations # True | 
+Deleting : MS # True | empty
+User : thompson.ward # 
+Deleting : TX # True | 
+Deleting : TX # True | 
+Deleting : Thompson Ward response locations # True | empty
+User : turner.foster # 
+Deleting : Turner Foster response locations # True | 
+Deleting : TN # True | 
+Deleting : TN # True | empty
+User : walker.kelly # empty
+User : white.richardson # 
+Deleting : White Richardson response locations # True | 
+Deleting : WA # True | 
+Deleting : WA # True | empty
+User : williams.sanchez # 
+Deleting : IN # True | 
+Deleting : Williams Sanchez response locations # True | 
+Deleting : IN # True | empty
+User : wilson.morgan # 
+Deleting : ID # True | 
+Deleting : ID # True | 
+Deleting : Wilson Morgan response locations # True | empty
+User : wright.ross # 
+Deleting : WV # True | 
+Deleting : Wright Ross response locations # True | 
+Deleting : WV # True | empty
+User : young.bennett # 
+Deleting : IA # True | 
+Deleting : Young Bennett response locations # True | 
+Deleting : IA # True | empty
+
+Deleting users
+--------------
+
+Deleting adams.powell  ##  success
+Deleting allen.price  ##  success
+Deleting anderson.bailey  ##  success
+Deleting baker.long  ##  success
+Deleting brown.rogers  ##  success
+Deleting campbell.bryant  ##  success
+Deleting carter.flores  ##  success
+Deleting clark.ramirez  ##  success
+Deleting davis.reed  ##  success
+Deleting edwards.griffin  ##  success
+Deleting evans.russell  ##  success
+Deleting garcia.torres  ##  success
+Deleting gonzalez.patterson  ##  success
+Deleting green.perry  ##  success
+Deleting hall.sanders  ##  success
+Deleting harris.cox  ##  success
+Deleting hernandez.wood  ##  success
+Deleting hill.coleman  ##  success
+Deleting jackson.cooper  ##  success
+Deleting johnson.stewart  ##  success
+Deleting jones.morris  ##  success
+Deleting king.barnes  ##  success
+Deleting lee.brooks  ##  success
+Deleting lewis.watson  ##  success
+Deleting lopez.henderson  ##  success
+Deleting martin.howard  ##  success
+Deleting martinez.peterson  ##  success
+Deleting miller.cook  ##  success
+Deleting mitchell.washington  ##  success
+Deleting moore.bell  ##  success
+Deleting nelson.hughes  ##  success
+Deleting parker.alexander  ##  success
+Deleting perez.butler  ##  success
+Deleting phillips.gonzales  ##  success
+Deleting roberts.simmons  ##  success
+Deleting robinson.gray  ##  success
+Deleting rodriguez.james  ##  success
+Deleting scott.jenkins  ##  success
+Deleting smith.collins  ##  success
+Deleting taylor.murphy  ##  success
+Deleting thomas.rivera  ##  success
+Deleting thompson.ward  ##  success
+Deleting turner.foster  ##  success
+Deleting walker.kelly  ##  success
+Deleting white.richardson  ##  success
+Deleting williams.sanchez  ##  success
+Deleting wilson.morgan  ##  success
+Deleting wright.ross  ##  success
+Deleting young.bennett  ##  success
+ All clean
+=====================================================================
+RUNNING CLEANUP
+Deleting groups
+---------------
+
+Deleting crime  ##  success
+Deleting crime2  ##  success
+
+Deleting user content
+---------------------
+
+User : admin # skipped
+User : bat.man # 
+Deleting : AK # True | empty
+User : esri_boundaries # skipped
+User : esri_demographics # skipped
+User : esri_livingatlas # skipped
+User : esri_nav # skipped
+User : robin_boywonder # empty
+
+Deleting users
+--------------
+
+Deleting bat.man  ##  success
+Deleting robin_boywonder  ##  success
+ All clean
+=====================================================================
+RUNNING CLEANUP
+Deleting groups
+---------------
+
+Deleting Basemaps  ##  success
+Deleting Central Services  ##  success
+Deleting Compliance  ##  success
+Deleting Customer Service, Finance, Billing and Accounting  ##  success
+Deleting Demographic Content  ##  success
+
+Deleting user content
+---------------------
+
+User : admin # skipped
+User : bat.man # empty
+User : brown.rogers # 
+Deleting : AR # True | 
+Deleting : AR # True | 
+Deleting : Brown Rogers response locations # True | empty
+User : davis.reed # 
+Deleting : FL # True | 
+Deleting : FL # True | 
+Deleting : Davis Reed response locations # True | empty
+User : esri_boundaries # skipped
+User : esri_demographics # skipped
+User : esri_livingatlas # skipped
+User : esri_nav # skipped
+User : johnson.stewart # 
+Deleting : NV # True | 
+Deleting : NV # True | 
+Deleting : Johnson Stewart response locations # True | empty
+User : jones.morris # 
+Deleting : NC # True | 
+Deleting : NC # True | 
+Deleting : Jones Morris response locations # True | empty
+User : miller.cook # 
+Deleting : NH # True | 
+Deleting : Miller Cook response locations # True | 
+Deleting : NH # True | empty
+User : moore.bell # 
+Deleting : AZ # True | 
+Deleting : AZ # True | 
+Deleting : Moore Bell response locations # True | empty
+User : smith.collins # 
+Deleting : KS # True | 
+Deleting : Smith Collins response locations # True | 
+Deleting : KS # True | empty
+User : taylor.murphy # 
+Deleting : LA # True | 
+Deleting : Taylor Murphy response locations # True | 
+Deleting : LA # True | empty
+User : williams.sanchez # 
+Deleting : Williams Sanchez response locations # True | 
+Deleting : IN # True | 
+Deleting : IN # True | empty
+User : wilson.morgan # 
+Deleting : ID # True | 
+Deleting : Wilson Morgan response locations # True | 
+Deleting : ID # True | empty
+
+Deleting users
+--------------
+
+Deleting bat.man  ##  success
+Deleting brown.rogers  ##  success
+Deleting davis.reed  ##  success
+Deleting johnson.stewart  ##  success
+Deleting jones.morris  ##  success
+Deleting miller.cook  ##  success
+Deleting moore.bell  ##  success
+Deleting smith.collins  ##  success
+Deleting taylor.murphy  ##  success
+Deleting williams.sanchez  ##  success
+Deleting wilson.morgan  ##  success
+ All clean

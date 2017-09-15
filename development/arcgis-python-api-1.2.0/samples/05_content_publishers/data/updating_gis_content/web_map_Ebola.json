@@ -1,0 +1,31 @@
+{
+    "operationalLayers": [
+        {
+            "id": "layer1",
+            "layerType": "ArcGISFeatureLayer",
+            "url": "https://services.arcgis.com/ORGID/arcgis/rest/services/Ebola_Facilities/FeatureServer/1",
+            "visibility": true,
+            "opacity": 1,
+            "title": "Ebola_Treatment_Units - Ebola_Treatment_Units_Classed",
+            "itemId": "f53d5907296e43e28e8570a24b1d1d26"
+        }
+    ],
+    "baseMap": {
+        "baseMapLayers": [
+            {
+                "id": "World_Topo_Map_9991",
+                "layerType": "ArcGISTiledMapServiceLayer",
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+                "visibility": true,
+                "opacity": 1,
+                "title": "World Topographic Map"
+            }
+        ],
+        "title": "Topographic"
+    },
+    "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+    },
+    "version": "2.5"
+}
