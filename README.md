@@ -1,12 +1,5 @@
 # Resources for CBE 40455 Process Operations
 
-The Mathprog models (.mod), Matlab files (.m), and IPython notebooks (.ipynb) listed below can be downloaded individually. Click on the link to view, then click on the download button to save on your computer.
-
-This collection can be opened directly in a Docker container on [mybinder.org](http://mybinder.org). Click on this button 
-
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/jckantor/CBE40455)
-
-[mybinder.org](http://mybinder.org) provides a live version of these notebooks that can be run, edited, and downloaded for your use under terms of the Creative Commons License. Unfortunately, persistent file storage is not available through this service, so you need to be sure and download any changes or new notebooks that you may create.
 
 ### Simulation of Discrete Event Systems
 
@@ -30,7 +23,7 @@ This collection can be opened directly in a Docker container on [mybinder.org](h
 
 * [Critical Path Method](https://github.com/jckantor/CBE40455/blob/master/notebooks/Critical%20Path%20Method.ipynb) (MathProg)
 * [Machine Bottleneck (Pyomo)](https://github.com/jckantor/CBE40455/blob/master/notebooks/Machine%20Bottleneck%20(Pyomo).ipynb)
-* [Job Shop Scheduling](https://github.com/jckantor/CBE40455/blob/master/notebooks/Job%20Shop%20Scheduling.ipynb) (MathProg)
+* [Job Shop Scheduling](https://github.com/jckantor/CBE40455/blob/master/notebooks/Job%20Shop%20Scheduling.ipynb) (Pyomo)
 * [Jesuit Volunteers Corps](https://github.com/jckantor/CBE40455/blob/master/notebooks/Jesuit%20Volunteer%20Corps.ipynb) (MathProg)
 
 ### Logistics
