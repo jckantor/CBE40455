@@ -25,6 +25,7 @@
 * [Machine Bottleneck (Pyomo)](https://github.com/jckantor/CBE40455/blob/master/notebooks/Machine%20Bottleneck%20(Pyomo).ipynb)
 * [Job Shop Scheduling](https://github.com/jckantor/CBE40455/blob/master/notebooks/Job%20Shop%20Scheduling.ipynb) (Pyomo)
 * [Jesuit Volunteers Corps](https://github.com/jckantor/CBE40455/blob/master/notebooks/Jesuit%20Volunteer%20Corps.ipynb) (MathProg)
+* [Scheduling Multipurpose Batch Processes using State-Task Networks](https://github.com/jckantor/CBE40455/blob/master/notebooks/Scheduling%20Multipurpose%20Batch%20Processes%20using%20State-Task%20Networks.ipynb) (Pyomo)
 
 ### Logistics
 
