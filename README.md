@@ -1,15 +1,5 @@
 # Resources for CBE 40455 Process Operations
 
-
-### Simulation of Discrete Event Systems
-
-* [Getting Started with Discrete Event Simulation](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20SimPy.ipynb)
-* [Discrete Event Simulation of a Batch Process](https://github.com/jckantor/CBE40455/blob/master/notebooks/Discrete%20Event%20Simulation%20of%20a%20Batch%20Process.ipynb)
-* [Spanky's Pizzeria](https://github.com/jckantor/CBE40455/blob/master/notebooks/Spanky's%20Pizzeria.ipynb)
-* [Warehouse Fulfillment Operations](https://github.com/jckantor/CBE40455/blob/master/notebooks/Warehouse%20Fulfillment%20Operations.ipynb)
-* [Geometric Brownian Price Process](https://github.com/jckantor/CBE40455/blob/master/notebooks/Geometric%20Brownian%20Price%20Process.ipynb)
-
-
 ### Linear Optimization
 
 * [Getting Started with CVXPY](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20CVXPY.ipynb)
@@ -26,6 +16,14 @@
 * [Job Shop Scheduling](https://github.com/jckantor/CBE40455/blob/master/notebooks/Job%20Shop%20Scheduling.ipynb) (Pyomo)
 * [Jesuit Volunteers Corps](https://github.com/jckantor/CBE40455/blob/master/notebooks/Jesuit%20Volunteer%20Corps.ipynb) (MathProg)
 * [Scheduling Multipurpose Batch Processes using State-Task Networks](https://github.com/jckantor/CBE40455/blob/master/notebooks/Scheduling%20Multipurpose%20Batch%20Processes%20using%20State-Task%20Networks.ipynb) (Pyomo)
+
+### Simulation of Discrete Event Systems
+
+* [Getting Started with Discrete Event Simulation](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20SimPy.ipynb)
+* [Discrete Event Simulation of a Batch Process](https://github.com/jckantor/CBE40455/blob/master/notebooks/Discrete%20Event%20Simulation%20of%20a%20Batch%20Process.ipynb)
+* [Spanky's Pizzeria](https://github.com/jckantor/CBE40455/blob/master/notebooks/Spanky's%20Pizzeria.ipynb)
+* [Warehouse Fulfillment Operations](https://github.com/jckantor/CBE40455/blob/master/notebooks/Warehouse%20Fulfillment%20Operations.ipynb)
+* [Geometric Brownian Price Process](https://github.com/jckantor/CBE40455/blob/master/notebooks/Geometric%20Brownian%20Price%20Process.ipynb)
 
 ### Logistics
 
