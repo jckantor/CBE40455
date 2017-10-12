@@ -21,6 +21,7 @@
 
 * [Getting Started with Discrete Event Simulation](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20SimPy.ipynb)
 * [Discrete Event Simulation of a Batch Process](https://github.com/jckantor/CBE40455/blob/master/notebooks/Discrete%20Event%20Simulation%20of%20a%20Batch%20Process.ipynb)
+* [Queuing Systems](https://github.com/jckantor/CBE40455/blob/master/notebooks/Queuing%20Systems.ipynb)
 * [Spanky's Pizzeria](https://github.com/jckantor/CBE40455/blob/master/notebooks/Spanky's%20Pizzeria.ipynb)
 * [Warehouse Fulfillment Operations](https://github.com/jckantor/CBE40455/blob/master/notebooks/Warehouse%20Fulfillment%20Operations.ipynb)
 * [Geometric Brownian Price Process](https://github.com/jckantor/CBE40455/blob/master/notebooks/Geometric%20Brownian%20Price%20Process.ipynb)
