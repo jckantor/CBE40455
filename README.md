@@ -48,6 +48,7 @@
 ### Risk and Diversification
 
 * [Measuring Return](https://github.com/jckantor/CBE40455/blob/master/notebooks/Measuring%20Return.ipynb)
+* [Geometric Brownian Motion](https://github.com/jckantor/CBE40455/blob/master/notebooks/Geometric%20Brownian%20Motion.ipynb)
 * [Stochastic Price Models](https://github.com/jckantor/CBE40455/blob/master/notebooks/Stochastic%20Price%20Models.ipynb)
 * [Binomial Model for an American Call Option](https://github.com/jckantor/CBE40455/blob/master/notebooks/Binomial%20Model%20for%20an%20American%20Call%20Option.ipynb) (MathProg)
 * [Portfolio Optimization](https://github.com/jckantor/CBE40455/blob/master/notebooks/Portfolio%20Optimization.ipynb)
