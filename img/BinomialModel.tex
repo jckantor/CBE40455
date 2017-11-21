@@ -1,0 +1,68 @@
+\documentclass[tikz]{standalone}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{helvet}
+\usepackage[T1]{sansmath}
+\usetikzlibrary{arrows,decorations.markings}
+\renewcommand{\familydefault}{\sfdefault}
+\normalfont
+
+\begin{document}
+\begin{sansmath}
+
+\tikzstyle{circ} = [circle,draw,thick,fill=blue!10,minimum size = 1cm,thick]
+    
+\begin{tikzpicture}[auto]
+    %\draw[help lines] (0,0) grid (15,-10);
+    
+    \node (xlabel) at (7,1) {Time Step $k$};
+    \node [rotate=90] (ylabel) at (-1.5,-5) {State/Scenario $s$};
+    
+    \draw [thick] (1,0)--(1+4*3,0);
+    \foreach \k in {0,...,4} 
+    	\draw[shift={(1+3*\k,0)},thick] (0pt,0pt)--(0pt,5pt) node[above] {$k=\k$};
+    	
+    \draw [thick] (0,-1)--(0,-9);
+    \foreach \s in {0,...,4} 
+    	\draw[shift={(0,-(1+2*\s))},thick] (0pt,0pt)--(-5pt,0pt) node[left] {$s=\s$};
+    	
+    \node [right] (eqn) at (1,-7) {$\begin{rcases*} S_{k+1,s} = uS_{k,s} \\ S_{k+1,s+1} = dS_{k,s} \end{rcases*} \implies S_{k,s} = u^{k-s} d^{k} S_{0,0}$};
+    	    
+   	\foreach \k in {0,...,4}
+   	  \foreach \s in {0,...,\k}
+   	    \node [circ] (S\k\s) at (1+3*\k,-1-2*\s) {$S_{\k,\s}$};
+    
+    \draw [-latex,thick] (S00)--(S10) node[midway,above,rotate=0] {\small $p$};
+    \draw [-latex,thick] (S00)--(S11) node[midway,above,rotate=-33.7] {\small $1-p$};
+
+    \draw [-latex,thick] (S10)--(S20) node[midway,above,rotate=0] {\small $p$};
+    \draw [-latex,thick] (S10)--(S21) node[midway,above,rotate=-33.7] {\small $1-p$};
+
+    \draw [-latex,thick] (S11)--(S21) node[midway,above,rotate=0] {\small $p$};
+    \draw [-latex,thick] (S11)--(S22) node[midway,above,rotate=-33.7] {\small $1-p$};
+
+    \draw [-latex,thick] (S20)--(S30) node[midway,above,rotate=0] {\small $p$};
+    \draw [-latex,thick] (S20)--(S31) node[midway,above,rotate=-33.7] {\small $1-p$};
+
+    \draw [-latex,thick] (S21)--(S31) node[midway,above,rotate=0] {\small $p$};
+    \draw [-latex,thick] (S21)--(S32) node[midway,above,rotate=-33.7] {\small $1-p$};
+
+    \draw [-latex,thick] (S22)--(S32) node[midway,above,rotate=0] {\small $p$};
+    \draw [-latex,thick] (S22)--(S33) node[midway,above,rotate=-33.7] {\small $1-p$};
+
+    \draw [-latex,thick] (S30)--(S40) node[midway,above,rotate=0] {\small $p$};
+    \draw [-latex,thick] (S30)--(S41) node[midway,above,rotate=-33.7] {\small $1-p$};
+
+    \draw [-latex,thick] (S31)--(S41) node[midway,above,rotate=0] {\small $p$};
+    \draw [-latex,thick] (S31)--(S42) node[midway,above,rotate=-33.7] {\small $1-p$};
+
+    \draw [-latex,thick] (S32)--(S42) node[midway,above,rotate=0] {\small $p$};
+    \draw [-latex,thick] (S32)--(S43) node[midway,above,rotate=-33.7] {\small $1-p$};
+
+    \draw [-latex,thick] (S33)--(S43) node[midway,above,rotate=0] {\small $p$};
+    \draw [-latex,thick] (S33)--(S44) node[midway,above,rotate=-33.7] {\small $1-p$};
+
+\end{tikzpicture}
+
+\end{sansmath}
+\end{document}
