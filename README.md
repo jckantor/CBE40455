@@ -50,6 +50,7 @@
 * [Measuring Return](https://github.com/jckantor/CBE40455/blob/master/notebooks/Measuring%20Return.ipynb)
 * [Geometric Brownian Motion](https://github.com/jckantor/CBE40455/blob/master/notebooks/Geometric%20Brownian%20Motion.ipynb)
 * [Binomial Model for Pricing Options](https://github.com/jckantor/CBE40455/blob/master/notebooks/Binomial%20Model%20for%20Pricing%20Options.ipynb) (Pyomo)
+* [Real Options](https://github.com/jckantor/CBE40455/blob/master/notebooks/Real%20Options.ipynb) (Pyomo)
 * [Portfolio Optimization](https://github.com/jckantor/CBE40455/blob/master/notebooks/Portfolio%20Optimization.ipynb)
 * [Portfolio Optimization using Mean Absolute Deviation](https://github.com/jckantor/CBE40455/blob/master/notebooks/Portfolio%20Optimization%20using%20Mean%20Absolute%20Deviation.ipynb) (MathProg)
 * [MAD Portfolio Optimization](https://github.com/jckantor/CBE40455/blob/master/notebooks/MAD%20Portfolio%20Optimization.ipynb)
