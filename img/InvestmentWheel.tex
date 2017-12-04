@@ -1,0 +1,37 @@
+\documentclass[tikz]{standalone}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{helvet}
+\usepackage[T1]{sansmath}
+\usetikzlibrary{arrows,decorations.markings}
+\renewcommand{\familydefault}{\sfdefault}
+\normalfont
+
+\begin{document}
+\begin{sansmath}    
+
+\begin{tikzpicture}[draw=blue!70,thick]
+    %\draw[help lines] (-6,-6) grid (6,6);
+    
+	\draw circle (4cm);
+	\filldraw[fill=red!40] (0:4cm) -- (0,0) -- (180:4cm)
+  		arc[start angle=180, end angle=0, radius=4cm] -- cycle;
+  	\filldraw[fill=blue!40] (0,0) -- (180:4cm) arc[start angle=180,
+  	    end angle=300, radius=4cm] -- cycle;
+  	\filldraw[fill=green!40] (0,0) -- (300:4cm) arc[start angle=300,
+  	    end angle=360, radius=4cm] -- cycle;
+  	\filldraw arc[start angle=180, end angle=90, radius=4cm] -- cycle;
+	\draw (90:2cm) node {\Huge\bf 3};
+	\draw (240:2cm) node {\Huge\bf 2};
+	\draw (330:2cm) node {\Huge\bf 6};
+	\filldraw[fill=black] (0,4.1) -- (-0.25,4.6) -- (0.25,4.6) -- cycle;
+	\draw[fill=black] (0,0) circle (6pt);
+	\foreach \a in {0,15,30,45,60,75,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345}{
+	    \draw[fill=black] (\a:3.9cm) circle (2pt);
+	}
+	\draw (0,5.5) node {\Huge Investment Wheel};
+	
+\end{tikzpicture}
+
+\end{sansmath}
+\end{document}
