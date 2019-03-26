@@ -1,0 +1,731 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{Machine Bottleneck (Pyomo)}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \section{Machine Bottleneck}\label{machine-bottleneck}
+
+This notebook demonstrates the formulation and solution of the a machine
+bottleneck problem using Pyomo/GLPK. The task is to schedule a set of
+jobs on a single machine given the release time, duration, and due time
+for each job. Date for the example problem is from Christelle Gueret,
+Christian Prins, Marc Sevaux, "Applications of Optimization with
+Xpress-MP," Chapter 5, Dash Optimization, 2000.
+
+\begin{itemize}
+\tightlist
+\item
+  Section \ref{example}
+\item
+  Section \ref{modeling}
+\item
+  Section \ref{pyomo}
+\item
+  Section \ref{visualization}
+\item
+  Section \ref{multiple}
+\end{itemize}
+
+     \#\# Example
+
+The problem is to schedule a sequence of jobs for a single machine. The
+data consists of a list of jobs. For each job, the data provides the
+time at which the job is released to the for machine processing, the
+expected duration of the job, and the due date. The problem is to
+sequence the jobs on the machine to meet the due dates, or show that no
+such sequence is possible.
+
+The following data was presented in the Machine Bottleneck Example from
+Christelle Gueret, Christian Prins, Marc Sevaux, "Applications of
+Optimization with Xpress-MP," Chapter 5, Dash Optimization, 2000.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{n}{JOBS} \PY{o}{=} \PY{p}{\PYZob{}}
+            \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{A}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{10}\PY{p}{\PYZcb{}}\PY{p}{,}
+            \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{B}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{6}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{21}\PY{p}{\PYZcb{}}\PY{p}{,}
+            \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{15}\PY{p}{\PYZcb{}}\PY{p}{,}
+            \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{D}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{0}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{10}\PY{p}{\PYZcb{}}\PY{p}{,}
+            \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{E}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{0}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}  \PY{l+m+mi}{5}\PY{p}{\PYZcb{}}\PY{p}{,}
+            \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{F}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{15}\PY{p}{\PYZcb{}}\PY{p}{,}
+            \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{G}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{9}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{22}\PY{p}{\PYZcb{}}\PY{p}{,}
+        \PY{p}{\PYZcb{}}
+        
+        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+        \PY{k+kn}{from} \PY{n+nn}{IPython}\PY{n+nn}{.}\PY{n+nn}{display} \PY{k}{import} \PY{n}{display}
+        \PY{n}{display}\PY{p}{(}\PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{JOBS}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    
+    \begin{verbatim}
+           A   B   C   D  E   F   G
+due       10  21  15  10  5  15  22
+duration   5   6   8   4  2   3   2
+release    2   5   4   0  0   8   9
+    \end{verbatim}
+
+    
+     \#\# Modeling
+
+\subsubsection{Data}\label{data}
+
+The data for this problem consists of a list of jobs. Each job is tagged
+with a unique ID along with numerical data giving the time at which the
+job will be released for machine processing, the expected duration, and
+the time at which it is due.
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Symbol & Description\tabularnewline
+\midrule
+\endhead
+\(\text{ID}_{j}\) & Unique ID for task \(j\)\tabularnewline
+\(\text{due}_{j}\) & Due time for task \(j\)\tabularnewline
+\(\text{duration}_{j}\) & Duration of task \(j\)\tabularnewline
+\(\text{release}_{j}\) & Time task \(j\) becomes available for
+processing\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsubsection{Decision Variables}\label{decision-variables}
+
+For a single machine, the essential decision variable is the start time
+at which the job begins processing.
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Symbol & Description\tabularnewline
+\midrule
+\endhead
+\(\text{start}_{j}\) & Start of task \(j\)\tabularnewline
+\(\text{makespan}\) & Time to complete \emph{all} jobs.\tabularnewline
+\(\text{pastdue}_{j}\) & Time by which task \(j\) is past
+due\tabularnewline
+\(\text{early}_{j}\) & Time by which task \(j\) is finished
+early\tabularnewline
+\bottomrule
+\end{longtable}
+
+A job cannot start until it is released for processing
+
+\begin{align*}
+\text{start}_{j} & \geq \text{release}_{j}\\
+\end{align*}
+
+Once released for processing, we assume the processing continues until
+the job is finished. The finish time is compared to the due time, and
+the result stored in either the early or pastdue decision variables.
+These decision variables are needed to handle cases where it might not
+be possible to complete all jobs by the time they are due.
+
+\begin{align*}
+\text{start}_{j} + \text{duration}_{j} + \text{early}_{j} & = \text{due}_{j} + \text{pastdue}_{j}\\
+\text{early}_{j} & \geq 0 \\
+\text{pastdue}_{j} & \geq 0
+\end{align*}
+
+Finally, we include a single decision variable measuring the overall
+makespan for all jobs.
+
+\begin{align*}
+\text{start}_{j} +\text{duration}_{j} \leq \text{makespan}
+\end{align*}
+
+The final set of constraints requires that, for any given pair of jobs
+\(j\) and \(k\), that either \(j\) starts before \(k\) finishes, or
+\(k\) finishes before \(j\) starts. The boolean variable \(y_{jk} = 1\)
+indicates \(j\) finishes before \(k\) starts, and is 0 for the opposing
+case. Note that we only need to consider cases \(j > k\)
+
+\begin{align*}
+\text{start}_{i}+\text{duration}_{i} & \leq \text{start}_{j}+My_{i,j}\\
+\text{start}_{j}+\text{duration}_{j} & \leq \text{start}_{i}+M(1-y_{i,j})
+\end{align*}
+
+where \(M\) is a sufficiently large enough to assure the relaxed
+constraint is satisfied for all plausible values of the decision
+variables.
+
+     \#\# Pyomo Model
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{k+kn}{from} \PY{n+nn}{pyomo}\PY{n+nn}{.}\PY{n+nn}{environ} \PY{k}{import} \PY{o}{*}
+        \PY{k+kn}{from} \PY{n+nn}{IPython}\PY{n+nn}{.}\PY{n+nn}{display} \PY{k}{import} \PY{n}{display}
+        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+        
+        \PY{k}{def} \PY{n+nf}{schedule}\PY{p}{(}\PY{n}{JOBS}\PY{p}{)}\PY{p}{:}
+            
+            \PY{c+c1}{\PYZsh{} create model}
+            \PY{n}{m} \PY{o}{=} \PY{n}{ConcreteModel}\PY{p}{(}\PY{p}{)}
+            
+            \PY{c+c1}{\PYZsh{} index set to simplify notation}
+            \PY{n}{J} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n}{JOBS}\PY{o}{.}\PY{n}{keys}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+        
+            \PY{c+c1}{\PYZsh{} decision variables}
+            \PY{n}{m}\PY{o}{.}\PY{n}{start}      \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{J}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n}{NonNegativeReals}\PY{p}{)}
+            \PY{n}{m}\PY{o}{.}\PY{n}{makespan}   \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{domain}\PY{o}{=}\PY{n}{NonNegativeReals}\PY{p}{)}
+            \PY{n}{m}\PY{o}{.}\PY{n}{pastdue}    \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{J}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n}{NonNegativeReals}\PY{p}{)}
+            \PY{n}{m}\PY{o}{.}\PY{n}{early}      \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{J}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n}{NonNegativeReals}\PY{p}{)}
+            
+            \PY{c+c1}{\PYZsh{} additional decision variables for use in the objecive}
+            \PY{n}{m}\PY{o}{.}\PY{n}{ispastdue}  \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{J}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n}{Binary}\PY{p}{)}
+            \PY{n}{m}\PY{o}{.}\PY{n}{maxpastdue} \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{domain}\PY{o}{=}\PY{n}{NonNegativeReals}\PY{p}{)}
+        
+            \PY{c+c1}{\PYZsh{} for modeling disjunctive constraints}
+            \PY{n}{m}\PY{o}{.}\PY{n}{y} \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{J}\PY{p}{,} \PY{n}{J}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n}{Binary}\PY{p}{)}
+            \PY{n}{BigM} \PY{o}{=} \PY{n+nb}{max}\PY{p}{(}\PY{p}{[}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{J}\PY{p}{]}\PY{p}{)} \PY{o}{+} \PY{n+nb}{sum}\PY{p}{(}\PY{p}{[}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{J}\PY{p}{]}\PY{p}{)}
+        
+            \PY{n}{m}\PY{o}{.}\PY{n}{OBJ} \PY{o}{=} \PY{n}{Objective}\PY{p}{(}
+                \PY{n}{expr} \PY{o}{=} \PY{n+nb}{sum}\PY{p}{(}\PY{p}{[}\PY{n}{m}\PY{o}{.}\PY{n}{pastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{J}\PY{p}{]}\PY{p}{)}\PY{p}{,}
+                \PY{n}{sense} \PY{o}{=} \PY{n}{minimize}
+            \PY{p}{)}
+        
+            \PY{n}{m}\PY{o}{.}\PY{n}{cons} \PY{o}{=} \PY{n}{ConstraintList}\PY{p}{(}\PY{p}{)}
+            \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{J}\PY{p}{:}
+                \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+                \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{+} \PY{n}{m}\PY{o}{.}\PY{n}{early}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{==} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{+} \PY{n}{m}\PY{o}{.}\PY{n}{pastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{)}
+                \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{pastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{maxpastdue}\PY{p}{)}
+                \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{makespan}\PY{p}{)}
+                \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{pastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{BigM}\PY{o}{*}\PY{n}{m}\PY{o}{.}\PY{n}{ispastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{)}
+                \PY{k}{for} \PY{n}{k} \PY{o+ow}{in} \PY{n}{J}\PY{p}{:}
+                    \PY{k}{if} \PY{n}{j} \PY{o}{\PYZlt{}} \PY{n}{k}\PY{p}{:}
+                        \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{k}\PY{p}{]} \PY{o}{+} \PY{n}{BigM}\PY{o}{*}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{m}\PY{o}{.}\PY{n}{y}\PY{p}{[}\PY{n}{j}\PY{p}{,}\PY{n}{k}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+                        \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{k}\PY{p}{]} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{k}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{+} \PY{n}{BigM}\PY{o}{*}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{y}\PY{p}{[}\PY{n}{j}\PY{p}{,}\PY{n}{k}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+            
+            \PY{n}{SolverFactory}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{glpk}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{solve}\PY{p}{(}\PY{n}{m}\PY{p}{)}
+        
+            \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{J}\PY{p}{:}
+                \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{start}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{(}\PY{p}{)}
+                \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{finish}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{(}\PY{p}{)} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+                \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pastdue}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{pastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{(}\PY{p}{)}
+                \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{early}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{early}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{(}\PY{p}{)}
+                \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ispastdue}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{ispastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{(}\PY{p}{)}
+                
+            \PY{c+c1}{\PYZsh{} display table of results}
+            \PY{n}{df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{JOBS}\PY{p}{)}
+            \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Total}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{sum}\PY{p}{(}\PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}
+            \PY{n}{df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{finish}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{start}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Total}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}
+            \PY{n}{display}\PY{p}{(}\PY{n}{df}\PY{p}{)}
+                
+            \PY{k}{return} \PY{n}{JOBS}
+        
+        \PY{n}{JOBS} \PY{o}{=} \PY{n}{schedule}\PY{p}{(}\PY{n}{JOBS}\PY{p}{)}
+\end{Verbatim}
+
+
+    
+    \begin{verbatim}
+              A     B     C     D    E     F     G Total
+due        10.0  21.0  15.0  10.0  5.0  15.0  22.0      
+duration    5.0   6.0   8.0   4.0  2.0   3.0   2.0    30
+early       0.0   1.0   0.0   4.0  3.0   1.0   0.0     9
+finish     11.0  20.0  30.0   6.0  2.0  14.0  22.0      
+ispastdue   1.0   0.0   1.0   0.0  0.0   0.0   0.0     2
+pastdue     1.0   0.0  15.0   0.0  0.0   0.0   0.0    16
+release     2.0   5.0   4.0   0.0  0.0   8.0   9.0      
+start       6.0  14.0  22.0   2.0  0.0  11.0  20.0      
+    \end{verbatim}
+
+    
+     \#\# Visualization
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+        \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+        
+        \PY{k}{def} \PY{n+nf}{visualize}\PY{p}{(}\PY{n}{JOBS}\PY{p}{)}\PY{p}{:}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{12}\PY{p}{,}\PY{l+m+mi}{6}\PY{p}{)}\PY{p}{)}
+            \PY{n}{idx} \PY{o}{=} \PY{l+m+mi}{0}
+            \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n+nb}{sorted}\PY{p}{(}\PY{n}{JOBS}\PY{o}{.}\PY{n}{keys}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+                \PY{n}{idx} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+                \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{p}{[}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{start}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{finish}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{n}{idx}\PY{p}{,}\PY{n}{idx}\PY{p}{]}\PY{p}{,}
+                     \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{alpha}\PY{o}{=}\PY{l+m+mf}{1.0}\PY{p}{,}\PY{n}{lw}\PY{o}{=}\PY{l+m+mi}{25}\PY{p}{,}\PY{n}{solid\PYZus{}capstyle}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{butt}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+                \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{p}{[}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{n}{idx}\PY{p}{,}\PY{n}{idx}\PY{p}{]}\PY{p}{,}
+                     \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{cyan}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{alpha}\PY{o}{=}\PY{l+m+mf}{0.6}\PY{p}{,}\PY{n}{lw}\PY{o}{=}\PY{l+m+mi}{25}\PY{p}{,}\PY{n}{solid\PYZus{}capstyle}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{butt}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+                \PY{n}{plt}\PY{o}{.}\PY{n}{text}\PY{p}{(}\PY{p}{(}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{start}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{finish}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{/}\PY{l+m+mf}{2.0}\PY{p}{,}\PY{n}{idx}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Job }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n}{j}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{white}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{weight}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bold}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                    \PY{n}{horizontalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{center}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{verticalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{center}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        
+            \PY{n}{plt}\PY{o}{.}\PY{n}{ylim}\PY{p}{(}\PY{n}{plt}\PY{o}{.}\PY{n}{ylim}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.5}\PY{p}{,}\PY{n}{plt}\PY{o}{.}\PY{n}{ylim}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{+}\PY{l+m+mf}{0.5}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Machine Schedule}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Time}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Job Index}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{p}{)}
+        
+        \PY{n}{visualize}\PY{p}{(}\PY{n}{JOBS}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_7_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+     \#\# Multiple Machines
+
+The case of multiple machines requires a modest extension of model
+described above. Given a set \(M\) of machines, we introduce an
+additional decision binary variable \(z_{j,m}\) indicating if job \(j\)
+has been assigned to machine \(m\). The additional constraints
+
+\begin{align*}
+\sum_{m\in M}z_{j,m} = 1
+\end{align*}
+
+require each job to be assigned to exactly one machine for processing.
+
+If both jobs \(j\) and \(k\) have been assigned to machine \(m\), then
+the disjunctive ordering constraints must apply. This logic is
+equivalent to the following constraints for \(j < k\).
+
+\begin{align*}
+\text{start}_{i}+\text{duration}_{i} & \leq \text{start}_{j}+My_{i,j} + M(1-z_{j,m}) + M(1-z_{k,m})\\
+\text{start}_{j}+\text{duration}_{j} & \leq \text{start}_{i}+M(1-y_{i,j} + M(1-z_{j,m}) + M(1-z_{k,m}))
+\end{align*}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{MACHINES} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{A}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{B}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{k+kn}{from} \PY{n+nn}{pyomo}\PY{n+nn}{.}\PY{n+nn}{environ} \PY{k}{import} \PY{o}{*}
+        \PY{k+kn}{from} \PY{n+nn}{IPython}\PY{n+nn}{.}\PY{n+nn}{display} \PY{k}{import} \PY{n}{display}
+        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+        
+        \PY{k}{def} \PY{n+nf}{schedule\PYZus{}machines}\PY{p}{(}\PY{n}{JOBS}\PY{p}{,}\PY{n}{MACHINES}\PY{p}{)}\PY{p}{:}
+            
+            \PY{c+c1}{\PYZsh{} create model}
+            \PY{n}{m} \PY{o}{=} \PY{n}{ConcreteModel}\PY{p}{(}\PY{p}{)}
+            
+            \PY{c+c1}{\PYZsh{} index set to simplify notation}
+            \PY{n}{J} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n}{JOBS}\PY{o}{.}\PY{n}{keys}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+            \PY{n}{M} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n}{MACHINES}\PY{p}{)}
+        
+            \PY{c+c1}{\PYZsh{} decision variables}
+            \PY{n}{m}\PY{o}{.}\PY{n}{start}      \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{J}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n}{NonNegativeReals}\PY{p}{)}
+            \PY{n}{m}\PY{o}{.}\PY{n}{makespan}   \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{domain}\PY{o}{=}\PY{n}{NonNegativeReals}\PY{p}{)}
+            \PY{n}{m}\PY{o}{.}\PY{n}{pastdue}    \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{J}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n}{NonNegativeReals}\PY{p}{)}
+            \PY{n}{m}\PY{o}{.}\PY{n}{early}      \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{J}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n}{NonNegativeReals}\PY{p}{)}
+            
+            \PY{c+c1}{\PYZsh{} additional decision variables for use in the objecive}
+            \PY{n}{m}\PY{o}{.}\PY{n}{ispastdue}  \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{J}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n}{Binary}\PY{p}{)}
+            \PY{n}{m}\PY{o}{.}\PY{n}{maxpastdue} \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{domain}\PY{o}{=}\PY{n}{NonNegativeReals}\PY{p}{)}
+            
+            \PY{c+c1}{\PYZsh{} for binary assignment of jobs to machines}
+            \PY{n}{m}\PY{o}{.}\PY{n}{z} \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{J}\PY{p}{,} \PY{n}{M}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n}{Binary}\PY{p}{)}
+        
+            \PY{c+c1}{\PYZsh{} for modeling disjunctive constraints}
+            \PY{n}{m}\PY{o}{.}\PY{n}{y} \PY{o}{=} \PY{n}{Var}\PY{p}{(}\PY{n}{J}\PY{p}{,} \PY{n}{J}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n}{Binary}\PY{p}{)}
+            \PY{n}{BigM} \PY{o}{=} \PY{n+nb}{max}\PY{p}{(}\PY{p}{[}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{J}\PY{p}{]}\PY{p}{)} \PY{o}{+} \PY{n+nb}{sum}\PY{p}{(}\PY{p}{[}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{J}\PY{p}{]}\PY{p}{)}
+        
+            \PY{n}{m}\PY{o}{.}\PY{n}{OBJ} \PY{o}{=} \PY{n}{Objective}\PY{p}{(}
+                \PY{n}{expr} \PY{o}{=} 
+                    \PY{o}{+} \PY{l+m+mi}{1}\PY{o}{*}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{pastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{J}\PY{p}{)}
+                    \PY{o}{+} \PY{l+m+mi}{1}\PY{o}{*}\PY{n}{m}\PY{o}{.}\PY{n}{makespan}
+                    \PY{o}{\PYZhy{}} \PY{l+m+mi}{1}\PY{o}{*}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{early}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{J}\PY{p}{)}\PY{p}{,}
+                \PY{n}{sense} \PY{o}{=} \PY{n}{minimize}
+            \PY{p}{)}
+        
+            \PY{n}{m}\PY{o}{.}\PY{n}{cons} \PY{o}{=} \PY{n}{ConstraintList}\PY{p}{(}\PY{p}{)}
+            \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{J}\PY{p}{:}
+                \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+                \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{+} \PY{n}{m}\PY{o}{.}\PY{n}{early}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{==} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{+} \PY{n}{m}\PY{o}{.}\PY{n}{pastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{)}
+                \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{pastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{maxpastdue}\PY{p}{)}
+                \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{makespan}\PY{p}{)}
+                \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{pastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{BigM}\PY{o}{*}\PY{n}{m}\PY{o}{.}\PY{n}{ispastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{)}
+                \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{p}{[}\PY{n}{m}\PY{o}{.}\PY{n}{z}\PY{p}{[}\PY{n}{j}\PY{p}{,}\PY{n}{mach}\PY{p}{]} \PY{k}{for} \PY{n}{mach} \PY{o+ow}{in} \PY{n}{M}\PY{p}{]}\PY{p}{)} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{)}
+                \PY{k}{for} \PY{n}{mach} \PY{o+ow}{in} \PY{n}{M}\PY{p}{:}
+                    \PY{k}{for} \PY{n}{k} \PY{o+ow}{in} \PY{n}{J}\PY{p}{:}
+                        \PY{k}{if} \PY{n}{j} \PY{o}{\PYZlt{}} \PY{n}{k}\PY{p}{:}
+                            \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} 
+                                \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{k}\PY{p}{]} \PY{o}{+} \PY{n}{BigM}\PY{o}{*}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{m}\PY{o}{.}\PY{n}{y}\PY{p}{[}\PY{n}{j}\PY{p}{,}\PY{n}{k}\PY{p}{]}\PY{p}{)} \PY{o}{+} \PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{m}\PY{o}{.}\PY{n}{z}\PY{p}{[}\PY{n}{j}\PY{p}{,}\PY{n}{mach}\PY{p}{]}\PY{p}{)} \PY{o}{+} \PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{m}\PY{o}{.}\PY{n}{z}\PY{p}{[}\PY{n}{k}\PY{p}{,}\PY{n}{mach}\PY{p}{]}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+                            \PY{n}{m}\PY{o}{.}\PY{n}{cons}\PY{o}{.}\PY{n}{add}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{k}\PY{p}{]} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{k}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} 
+                                \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]} \PY{o}{+} \PY{n}{BigM}\PY{o}{*}\PY{p}{(}\PY{p}{(}\PY{n}{m}\PY{o}{.}\PY{n}{y}\PY{p}{[}\PY{n}{j}\PY{p}{,}\PY{n}{k}\PY{p}{]}\PY{p}{)} \PY{o}{+} \PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{m}\PY{o}{.}\PY{n}{z}\PY{p}{[}\PY{n}{j}\PY{p}{,}\PY{n}{mach}\PY{p}{]}\PY{p}{)} \PY{o}{+} \PY{p}{(}\PY{l+m+mi}{1}\PY{o}{\PYZhy{}}\PY{n}{m}\PY{o}{.}\PY{n}{z}\PY{p}{[}\PY{n}{k}\PY{p}{,}\PY{n}{mach}\PY{p}{]}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+            
+            \PY{n}{SolverFactory}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{glpk}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{solve}\PY{p}{(}\PY{n}{m}\PY{p}{)}
+        
+            \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n}{J}\PY{p}{:}
+                \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{start}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{(}\PY{p}{)}
+                \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{finish}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{start}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{(}\PY{p}{)} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{duration}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+                \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pastdue}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{pastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{(}\PY{p}{)}
+                \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{early}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{early}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{(}\PY{p}{)}
+                \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ispastdue}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{m}\PY{o}{.}\PY{n}{ispastdue}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{(}\PY{p}{)}
+                \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{machine}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{p}{[}\PY{n}{mach} \PY{k}{for} \PY{n}{mach} \PY{o+ow}{in} \PY{n}{MACHINES} \PY{k}{if} \PY{n}{m}\PY{o}{.}\PY{n}{z}\PY{p}{[}\PY{n}{j}\PY{p}{,}\PY{n}{mach}\PY{p}{]}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+                
+            \PY{c+c1}{\PYZsh{} display table of results}
+            \PY{n}{df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{JOBS}\PY{p}{)}
+            \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Total}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{sum}\PY{p}{(}\PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}
+            \PY{n}{df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{finish}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{start}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{machine}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Total}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}
+            \PY{n+nb}{print}\PY{p}{(}\PY{n}{df}\PY{p}{)}
+                
+            \PY{k}{return} \PY{n}{JOBS}
+        
+        \PY{n}{JOBS} \PY{o}{=} \PY{n}{schedule\PYZus{}machines}\PY{p}{(}\PY{n}{JOBS}\PY{p}{,}\PY{n}{MACHINES}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+            A   B   C   D  E   F   G Total
+due        10  21  15  10  5  15  22      
+duration    5   6   8   4  2   3   2    30
+early       3   8   3   6  3   0   7    30
+finish      7  13  12   4  2  15  15      
+ispastdue   0   0   0   0  0   0   0     0
+machine     B   B   A   A  B   A   B      
+pastdue     0   0   0   0  0   0   0     0
+release     2   5   4   0  0   8   9      
+start       2   7   4   0  0  12  13      
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+        \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+        
+        \PY{k}{def} \PY{n+nf}{visualize\PYZus{}machines}\PY{p}{(}\PY{n}{JOBS}\PY{p}{,}\PY{n}{MACHINES}\PY{p}{)}\PY{p}{:}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{12}\PY{p}{,}\PY{l+m+mi}{8}\PY{p}{)}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}
+            \PY{n}{idx} \PY{o}{=} \PY{l+m+mi}{0}
+            \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n+nb}{sorted}\PY{p}{(}\PY{n}{JOBS}\PY{o}{.}\PY{n}{keys}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+                \PY{n}{idx} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+                \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{p}{[}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{start}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{finish}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{n}{idx}\PY{p}{,}\PY{n}{idx}\PY{p}{]}\PY{p}{,}
+                     \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{alpha}\PY{o}{=}\PY{l+m+mf}{1.0}\PY{p}{,}\PY{n}{lw}\PY{o}{=}\PY{l+m+mi}{15}\PY{p}{,}\PY{n}{solid\PYZus{}capstyle}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{butt}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+                \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{p}{[}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{release}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{due}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{n}{idx}\PY{p}{,}\PY{n}{idx}\PY{p}{]}\PY{p}{,}
+                     \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{cyan}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{alpha}\PY{o}{=}\PY{l+m+mf}{0.6}\PY{p}{,}\PY{n}{lw}\PY{o}{=}\PY{l+m+mi}{15}\PY{p}{,}\PY{n}{solid\PYZus{}capstyle}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{butt}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+                \PY{n}{txt} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Job }\PY{l+s+s1}{\PYZsq{}}\PY{o}{+}\PY{n}{j}\PY{o}{+}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ on }\PY{l+s+s1}{\PYZsq{}}\PY{o}{+}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{machine}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+                \PY{n}{plt}\PY{o}{.}\PY{n}{text}\PY{p}{(}\PY{p}{(}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{start}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{finish}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{/}\PY{l+m+mf}{2.0}\PY{p}{,}\PY{n}{idx}\PY{p}{,}
+                    \PY{n}{txt}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{white}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{weight}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bold}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                    \PY{n}{horizontalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{center}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{verticalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{center}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        
+            \PY{n}{plt}\PY{o}{.}\PY{n}{ylim}\PY{p}{(}\PY{n}{plt}\PY{o}{.}\PY{n}{ylim}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.5}\PY{p}{,}\PY{n}{plt}\PY{o}{.}\PY{n}{ylim}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{+}\PY{l+m+mf}{0.5}\PY{p}{)}
+            \PY{n}{xmin}\PY{p}{,}\PY{n}{xmax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{xlim}\PY{p}{(}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Machine Schedule}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Time}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Job Index}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{p}{)}
+            
+            \PY{n}{plt}\PY{o}{.}\PY{n}{subplot}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{)}
+            \PY{n}{idx} \PY{o}{=} \PY{l+m+mi}{0}
+            \PY{k}{for} \PY{n}{m} \PY{o+ow}{in} \PY{n+nb}{sorted}\PY{p}{(}\PY{n}{MACHINES}\PY{p}{)}\PY{p}{:}
+                \PY{n}{idx} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+                \PY{n}{color} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{blue}\PY{l+s+s1}{\PYZsq{}}
+                \PY{k}{for} \PY{n}{j} \PY{o+ow}{in} \PY{n+nb}{sorted}\PY{p}{(}\PY{n}{JOBS}\PY{o}{.}\PY{n}{keys}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+                    \PY{k}{if} \PY{n}{m} \PY{o}{==} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{machine}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{:}
+                        \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{p}{[}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{start}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{finish}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{n}{idx}\PY{p}{,}\PY{n}{idx}\PY{p}{]}\PY{p}{,}
+                                \PY{n}{color}\PY{o}{=}\PY{n}{color}\PY{p}{,}\PY{n}{alpha}\PY{o}{=}\PY{l+m+mf}{0.5}\PY{p}{,}\PY{n}{lw}\PY{o}{=}\PY{l+m+mi}{15}\PY{p}{,}\PY{n}{solid\PYZus{}capstyle}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{butt}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+                        \PY{n}{txt} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Job }\PY{l+s+s1}{\PYZsq{}}\PY{o}{+}\PY{n}{j}\PY{o}{+}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ on }\PY{l+s+s1}{\PYZsq{}}\PY{o}{+}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{machine}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+                        \PY{n}{plt}\PY{o}{.}\PY{n}{text}\PY{p}{(}\PY{p}{(}\PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{start}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{+} \PY{n}{JOBS}\PY{p}{[}\PY{n}{j}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{finish}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{/}\PY{l+m+mf}{2.0}\PY{p}{,}\PY{n}{idx}\PY{p}{,}
+                            \PY{n}{txt}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{white}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{weight}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bold}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                            \PY{n}{horizontalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{center}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{verticalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{center}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{xlim}\PY{p}{(}\PY{n}{xmin}\PY{p}{,}\PY{n}{xmax}\PY{p}{)}
+            \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{p}{)}  
+        
+        \PY{n}{MACHINES} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{1}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{2}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{3}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+        \PY{n}{JOBS} \PY{o}{=} \PY{n}{schedule\PYZus{}machines}\PY{p}{(}\PY{n}{JOBS}\PY{p}{,}\PY{n}{MACHINES}\PY{p}{)}
+        \PY{n}{visualize\PYZus{}machines}\PY{p}{(}\PY{n}{JOBS}\PY{p}{,}\PY{n}{MACHINES}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+            A   B   C   D  E   F   G Total
+due        10  21  15  10  5  15  22      
+duration    5   6   8   4  2   3   2    30
+early       3  10   3   6  3   4   9    38
+finish      7  11  12   4  2  11  13      
+ispastdue   0   0   0   0  0   0   0     0
+machine     3   2   1   1  2   3   2      
+pastdue     0   0   0   0  0   0   0     0
+release     2   5   4   0  0   8   9      
+start       2   5   4   0  0   8  11      
+
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_11_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
