@@ -53,7 +53,7 @@
 - [7.3 Binomial Model for Pricing Options](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.03-Binomial-Model-for-Pricing-Options.ipynb)
 - [7.4 Real Options](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb)
 - [7.5 Portfolio Optimization](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb)
-- [7.6 Portfolio Optimization using Mean Absolute Deviation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.06-Portfolio-Optimization -using-Mean-Absolute-Deviation.ipynb)
+- [7.6 Portfolio Optimization using Mean Absolute Deviation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.06-Portfolio-Optimization-using-Mean-Absolute-Deviation.ipynb)
 - [7.7 Portfolio Optimization](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.07-MAD-Portfolio-Optimization.ipynb)
 
 ### [Chapter 8. Optimization in Google Sheets](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/08.00-Optimization-in-Google-Sheets.ipynb)
