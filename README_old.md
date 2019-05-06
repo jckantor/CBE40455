@@ -36,7 +36,6 @@
 * [Pickup and Delivery](https://github.com/jckantor/CBE40455/blob/master/notebooks/Pickup%20and%20Delivery%20.ipynb) (MathProg)
 * [Stock Cutting](https://github.com/jckantor/CBE40455/blob/master/notebooks/Stock%20Cutting.ipynb) (MathProg)
 
-
 ### Optimization under Uncertainty
 
 * [Newsvendor Problem](https://github.com/jckantor/CBE40455/blob/master/notebooks/Newsvendor%20Problem.ipynb) (MathProg)
