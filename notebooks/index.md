@@ -27,7 +27,7 @@
 - [4.1 Getting Started with SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.01-Getting-Started-with-SimPy.ipynb)
 - [4.2 Model Development in SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.02-Discrete-Event-Simulation-of-a-Batch-Process.ipynb)
 - [4.3 Queuing Systems](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Queuing-Systems.ipynb)
-- [4.4 # Menu](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.04-Spanky's-Pizzeria.ipynb)
+- [4.4 Spanky's Pizzeria](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.04-Spanky's-Pizzeria.ipynb)
 - [4.5 Warehouse Fulfullment Operations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.05-Warehouse-Fulfillment-Operations.ipynb)
 - [4.6 Geometric Brownian Price Process](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Geometric-Brownian-Price-Process.ipynb)
 
