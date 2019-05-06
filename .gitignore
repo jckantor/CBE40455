@@ -1,4 +1,8 @@
-*checkpoint.ipynb
+*/.idea
+.idea
+.ipynb_checkpoints
+.texpadtmp
+.DS_Store
 
 *.csv
 

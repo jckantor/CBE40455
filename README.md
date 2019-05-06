@@ -1,76 +1,18 @@
-# Resources for CBE 40455 Process Operations
 
-### Linear Optimization
+# Resources for Process Operations
 
-* [Getting Started with CVXPY](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20CVXPY.ipynb)
-* [Getting Started with Gurobi](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20Gurobi.ipynb)
-* [Getting Started with GNU MathProg](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20GNU%20MathProg.ipynb) (MathProg)
-* [Production Model with Constraints (Pyomo)](https://github.com/jckantor/CBE40455/blob/master/notebooks/Production%20Models%20with%20Constraints%20(Pyomo).ipynb)
-* [Transportation Networks (Pyomo)](https://github.com/jckantor/CBE40455/blob/master/notebooks/Transportation%20Networks%20(Pyomo).ipynb)
-* [Data Reconciliation for a Heat Exchanger with By-pass](https://github.com/jckantor/CBE40455/blob/master/notebooks/Data%20Reconciliation.ipynb)] (MathProg)
+This repository comprises a collection of Jupyter/Python notebooks in support of **CBE 40455 Process Operations**
+taught at the University of Notre Dame.
 
-### Scheduling
+The links below display the notebooks as regular HTML web pages. From there you can run the notebook on 
+[Google Colaboratory](https://colab.research.google.com) or download to run on your own laptop. To run on your own
+laptop you will need to install Jupyter and Python 3, such as the excellent
+[Anaconda distribution from Continuum Analytics](https://www.continuum.io/downloads).
 
-* [Critical Path Method](https://github.com/jckantor/CBE40455/blob/master/notebooks/Critical%20Path%20Method.ipynb) (MathProg)
-* [Machine Bottleneck (Pyomo)](https://github.com/jckantor/CBE40455/blob/master/notebooks/Machine%20Bottleneck%20(Pyomo).ipynb)
-* [Job Shop Scheduling](https://github.com/jckantor/CBE40455/blob/master/notebooks/Job%20Shop%20Scheduling.ipynb) (Pyomo)
-* [Jesuit Volunteers Corps](https://github.com/jckantor/CBE40455/blob/master/notebooks/Jesuit%20Volunteer%20Corps.ipynb) (MathProg)
-* [Scheduling Multipurpose Batch Processes using State-Task Networks](https://github.com/jckantor/CBE40455/blob/master/notebooks/Scheduling%20Multipurpose%20Batch%20Processes%20using%20State-Task%20Networks.ipynb) (Pyomo)
+Please let me know (jeff at nd.edu) if you any thoughts or suggestions on how these notebooks could be improved for 
+teaching and learning the principles of Process Operations.
 
-### Simulation of Discrete Event Systems
-
-* [Getting Started with Discrete Event Simulation](https://github.com/jckantor/CBE40455/blob/master/notebooks/Getting%20Started%20with%20SimPy.ipynb)
-* [Discrete Event Simulation of a Batch Process](https://github.com/jckantor/CBE40455/blob/master/notebooks/Discrete%20Event%20Simulation%20of%20a%20Batch%20Process.ipynb)
-* [Queuing Systems](https://github.com/jckantor/CBE40455/blob/master/notebooks/Queuing%20Systems.ipynb)
-* [Spanky's Pizzeria](https://github.com/jckantor/CBE40455/blob/master/notebooks/Spanky's%20Pizzeria.ipynb)
-* [Warehouse Fulfillment Operations](https://github.com/jckantor/CBE40455/blob/master/notebooks/Warehouse%20Fulfillment%20Operations.ipynb)
-* [Geometric Brownian Price Process](https://github.com/jckantor/CBE40455/blob/master/notebooks/Geometric%20Brownian%20Price%20Process.ipynb)
-
-### Logistics
-
-* [Economic Order Quantity](https://github.com/jckantor/CBE40455/blob/master/notebooks/Economic%20Order%20Quantity.ipynb)
-* [Assignment Problems](https://github.com/jckantor/CBE40455/blob/master/notebooks/Assignment%20Problems.ipynb) (MathProg)
-* [Vehicle Routing Problem](https://github.com/jckantor/CBE40455/blob/master/notebooks/Vehicle%20Routing.ipynb) (MathProg)
-* [Vehicle Routine Problem with Time Windows](https://github.com/jckantor/CBE40455/blob/master/notebooks/Vehicle%20Routine%20with%20Time%20Windows.ipynb) (MathProg)
-* [Traveling Salesman Problem with Time Windows](https://github.com/jckantor/CBE40455/blob/master/notebooks/Traveling%20Salesman%20Problem%20with%20Time%20Windows.ipynb) (MathProg)
-* [Pickup and Delivery](https://github.com/jckantor/CBE40455/blob/master/notebooks/Pickup%20and%20Delivery%20.ipynb) (MathProg)
-* [Stock Cutting](https://github.com/jckantor/CBE40455/blob/master/notebooks/Stock%20Cutting.ipynb) (MathProg)
-
-
-### Optimization under Uncertainty
-
-* [Newsvendor Problem](https://github.com/jckantor/CBE40455/blob/master/notebooks/Newsvendor%20Problem.ipynb) (MathProg)
-* [Scenario Analysis for a Plant Expansion](https://github.com/jckantor/CBE40455/blob/master/notebooks/Scenario%20Analysis%20for%20a%20Plant%20Expansion.ipynb) (MathProg)
-* [Risk Neutral Gambler](https://github.com/jckantor/CBE40455/blob/master/notebooks/Risk%20Neutral%20Gambler.ipynb) (MathProg)
-* [Risk Averse Gambler](https://github.com/jckantor/CBE40455/blob/master/notebooks/Risk%20Averse%20Gambler.ipynb) (MathProg)
-* [Points After Touchdown Decision](https://github.com/jckantor/CBE40455/blob/master/notebooks/Points%20after%20Touchdown%20Decision.ipynb)
-
-### Risk and Diversification
-
-* [Measuring Return](https://github.com/jckantor/CBE40455/blob/master/notebooks/Measuring%20Return.ipynb)
-* [Geometric Brownian Motion](https://github.com/jckantor/CBE40455/blob/master/notebooks/Geometric%20Brownian%20Motion.ipynb)
-* [Binomial Model for Pricing Options](https://github.com/jckantor/CBE40455/blob/master/notebooks/Binomial%20Model%20for%20Pricing%20Options.ipynb) (Pyomo)
-* [Real Options](https://github.com/jckantor/CBE40455/blob/master/notebooks/Real%20Options.ipynb) (Pyomo)
-* [Portfolio Optimization](https://github.com/jckantor/CBE40455/blob/master/notebooks/Portfolio%20Optimization.ipynb)
-* [Portfolio Optimization using Mean Absolute Deviation](https://github.com/jckantor/CBE40455/blob/master/notebooks/Portfolio%20Optimization%20using%20Mean%20Absolute%20Deviation.ipynb) (MathProg)
-* [MAD Portfolio Optimization](https://github.com/jckantor/CBE40455/blob/master/notebooks/MAD%20Portfolio%20Optimization.ipynb)
-
-### Optimization in Google Sheets
-
-* [Production Planning with Constraints (Google Sheet)](https://docs.google.com/spreadsheets/d/1StL_Z-GnE23LuS93mr9fybxmcAopFuWVvGTauJgvxng/edit?usp=sharing)
-* [SEMD Refinery (Google Sheet)](https://docs.google.com/spreadsheets/d/1x-DX4rnt6LCLiDpuSEwZDF0zs5mpVrpcjlU5kb2dmUA/edit?usp=sharing)
-* [Transportation Network Optimization (Google Sheet)](https://docs.google.com/spreadsheets/d/1-loaUHVteMnf09fKJy9F03x51OfnUvvbiLgX4k_eaPs/edit?usp=sharing)
-* [Project Management with the Critical Path (Google Sheet)](https://docs.google.com/spreadsheets/d/170KbWCvI-9eonNeGbZhDq3GyvmUiR3aSjtUzXT3Cono/edit?usp=sharing)
-* [Machine Bottleneck Scheduling (Google Sheet)](https://docs.google.com/spreadsheets/d/1e3a0hSMW_Oht56hB2YtIZMjh4OZTMOQpTUYuq-JGJ40/edit?usp=sharing)
-* [Stochastic Programming: Two Stage Solution for the Newsvendor Problem (Google Sheet)](https://docs.google.com/spreadsheets/d/1I6bt5_QUz9-toGgiVc2Y5fHlHNJtevChd-0-2R3jyrI/edit?usp=sharing)
-* [Knapsack Problem (Google Sheet)](https://docs.google.com/spreadsheets/d/1KXEmKDCyUH-sQEbmSN4CMhcQtO88npDcgTK2b4CRVdI/edit?usp=sharing)
-* [Stock Cutting (Google Sheet)](https://docs.google.com/spreadsheets/d/1Djn5eApF1rbJOV5CZpY_YrnYFeEH5FuCAGjj0ShXKAc/edit?usp=sharing)
-* [Soduko Solver 4x4 (Google Sheet)](https://docs.google.com/spreadsheets/d/1XMkn64lSKxzxcSeIDBJjEGiI5eUU8f90gEiPQ2JKLOk/edit?usp=sharing)
-
-
-### Student Projects
-
-* [Distillation Blending and Cutpoint Temperature Optimization]
-* [Inventory Management for a Distillery]
-* [Inventory Management of Baked Goods for a Coffee Shop]
-
+## Contents
+---
+- [1.1 Getting Started with CVXPY](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY.ipynb)
+- [1.2 ##### The latest version of this IPython notebook is available at [http://github.com/jckantor/CBE40455](http://github.com/jckantor/CBE40455)  for noncommercial use under terms of the [Creative Commons Attribution Noncommericial ShareAlike License](http://creativecommons.org/licenses/by-nc-sa/4.0/).](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.02-Getting-Started-with-CVXPY.ipynb)
