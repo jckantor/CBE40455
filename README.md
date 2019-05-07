@@ -21,7 +21,6 @@ teaching and learning the principles of Process Operations.
 - [1.3 Getting Started with Gurobi](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-Gurobi.ipynb)
 - [1.4 Getting Started with GNU MathProg in Jupyter Notebooks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.04-Getting-Started-with-GNU-MathProg.ipynb)
 - [1.5 Getting Started with Pandas](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.05-Getting-Started-with-Pandas.ipynb)
-- [1.7 Getting Started with Reveal](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.07-Getting-Started-with-Reveal.ipynb)
 
 ### [Chapter 2. Linear Optimization](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.00-Linear-Optimization.ipynb)
 - [2.1 Production Models with Constraints](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.01-Production-Models-with-Constraints-(Pyomo).ipynb)
