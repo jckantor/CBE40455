@@ -29,6 +29,8 @@
 - [4.4 Spanky's Pizzeria](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.04-Spanky's-Pizzeria.ipynb)
 - [4.5 Warehouse Fulfullment Operations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.05-Warehouse-Fulfillment-Operations.ipynb)
 - [4.6 Geometric Brownian Price Process](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Geometric-Brownian-Price-Process.ipynb)
+- [4.7 Continuous Time Simulation in SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.07-Continuous-Time-Simulation-in-SimPy.ipynb)
+- [4.8 Decentralized Control in a Supply Chain](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.08-Decentralized-Control-in-a-Supply-Chain.ipynb)
 
 ### [Chapter 5. Logistics](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.00-Logistics.ipynb)
 - [5.1 Economic Order Quantity](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.01-Economic-Order-Quantity.ipynb)
