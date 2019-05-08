@@ -4,7 +4,7 @@
 ## Table of Contents
 
 ### [Chapter 1. Getting Started Guides](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.00-Getting-Started-Guides.ipynb)
-- [1.1 Getting Started with CVXPY](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY (1).ipynb)
+- [1.1 Getting Started with CVXPY](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY.ipynb)
 - [1.2 Getting Started with Gurobi](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.02-Getting-Started-with-Gurobi.ipynb)
 - [1.3 Getting Started with GNU MathProg in Jupyter Notebooks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb)
 - [1.4 Getting Started with Pandas](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.04-Getting-Started-with-Pandas.ipynb)
