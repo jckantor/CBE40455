@@ -29,7 +29,8 @@
 - [4.2 Machine Bottleneck](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.02-Machine-Bottleneck-(Pyomo).ipynb)
 - [4.3 Job Shop Scheduling](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb)
 - [4.4 Jesuit Volunteer Corps](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.04-Jesuit-Volunteer-Corps.ipynb)
-- [4.5 Scheduling Multipurpose Batch Processes using State-Task Networks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.05-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb)
+- [4.5 Unit Commitment](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.05-Unit-Commitment.ipynb)
+- [4.6 Scheduling Multipurpose Batch Processes using State-Task Networks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb)
 
 ### [Chapter 5. Logistics](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.00-Logistics.ipynb)
 - [5.1 Economic Order Quantity](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.01-Economic-Order-Quantity.ipynb)
