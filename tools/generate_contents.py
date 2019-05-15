@@ -23,7 +23,7 @@ README_FILE = os.path.join(os.path.dirname(__file__), '..', 'README.md')
 
 # header for README.md
 README_HEADER = """
-# Resources for Process Operations
+# Process Operations
 
 This repository comprises a collection of Jupyter/Python notebooks in support of **CBE 40455 Process Operations**
 taught at the University of Notre Dame.
