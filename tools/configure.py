@@ -31,7 +31,7 @@ teaching and learning the principles of Process Operations.
 
 README_FOOTER = """
 **License Requirements.** The materials in this repository are available at 
-[http://github.com/jckantor/CBE20255](http://github.com/jckantor/CBE20255) for noncommercial use under terms of the 
+[http://github.com/jckantor/CBE40455](http://github.com/jckantor/CBE40455) for noncommercial use under terms of the 
 [Creative Commons Attribution Noncommericial ShareAlike License](http://creativecommons.org/licenses/by-nc-sa/4.0/). 
 You are invited to fork this repository, and to use, adapt, remix these material for non-commericial purposes. The 
 license terms require you to give attribution and share your work under the same terms. Pull requests for corrections 
