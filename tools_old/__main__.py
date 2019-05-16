@@ -4,35 +4,78 @@ import nbformat
 from nbformat.v4.nbbase import new_markdown_cell
 import itertools
 
-from configure import *
+###  EDIT THESE STRINGS
 
-# Header on index page pointing back to github.io
-INDEX_HEADER = "[{0}]({1})".format(DESC, PAGE)
+# header for README.md
+README_HEADER = """
+# Process Operations
 
-# location of remote notebook directory
-NBVIEWER_BASE_URL = "http://nbviewer.jupyter.org/github/{0}/{1}/blob/master/notebooks/".format(USER, REPO)
+This repository comprises a collection of Jupyter/Python notebooks in support of **CBE 40455 Process Operations**
+taught at the University of Notre Dame.
 
-# Header point to Table of Contents page viewed on nbviewer
-TOC_HEADER = "### [Table of Contents]({0}index.ipynb?flush=true)".format(NBVIEWER_BASE_URL)
+The links below display the notebooks as regular HTML web pages. From there you can run the notebook on 
+[Google Colaboratory](https://colab.research.google.com) or download to run on your own laptop. To run on your own
+laptop you will need to install Jupyter and Python 3, such as the excellent
+[Anaconda distribution from Continuum Analytics](https://www.continuum.io/downloads).
+
+Please let me know (jeff at nd.edu) if you any thoughts or suggestions on how these notebooks could be improved for 
+teaching and learning the principles of Process Operations.
+
+### [Table of Contents](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/index.ipynb?flush=true)
+"""
+
+README_FOOTER = """
+
+**License Requirements.** The materials in this repository are available at 
+[http://github.com/jckantor/CBE20255](http://github.com/jckantor/CBE20255) for noncommercial use under terms of the 
+[Creative Commons Attribution Noncommericial ShareAlike License](http://creativecommons.org/licenses/by-nc-sa/4.0/). 
+You are invited to fork this repository, and to use, adapt, remix these material for non-commericial purposes. The 
+license terms require you to give attribution and share your work under the same terms. Pull requests for corrections 
+and additions to these materials are most welcome.
+"""
+
+# header for the index file and notebook
+INDEX_HEADER = """
+# [Process Operations](http://jckantor.github.io/CBE40455/)
+
+"""
+
+# header to be inserted at the top of each notebook
+COURSE_INFO_HEADER = """
+
+*This notebook contains course material from [CBE 40455 Process Operations](http://jckantor.github.io/CBE40455/) by 
+Jeffrey Kantor (jeff at nd.edu); the content is available [on GitHub](https://github.com/jckantor/CBE40455).
+The text is released under the [CC-BY-NC-ND-4.0 license](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode), 
+and code is released under the [MIT license](https://opensource.org/licenses/MIT).*
+"""
 
 # template for link to open notebooks in Google colaboratory
-COLAB_TEMPLATE = """
-<p><a href="https://colab.research.google.com/github/{0}/{1}/blob/master/notebooks/{2}"><img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a>
+COLAB_LINK =  """
+<a href="https://colab.research.google.com/github/jckantor/CBE40455/blob/master/notebooks/{notebook_filename}">
+<img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open and Execute in Google Colaboratory"></a>
 """
-COLAB_LINK = COLAB_TEMPLATE.format(USER, REPO, "{notebook_filename}")
+
+# location of remote notebook directory
+NBVIEWER_BASE_URL = 'http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/'
+
+### DO NOT EDIT BELOW THIS LINE
 
 # location of the README.md file in the local repository
 README_FILE = os.path.join(os.path.dirname(__file__), '..', 'README.md')
 
-# location of notebook directory in the local repository
+# find location of notebook directory in the local repository
 NOTEBOOK_DIR = os.path.join(os.path.dirname(__file__), '..', 'notebooks')
 
-# location of the index files in the local respository
+# location of the index file in the local respository
 INDEX_FILE = os.path.join(NOTEBOOK_DIR, 'index.md')
+
+# location of the index notebook in the local repository
 INDEX_NB = os.path.join(NOTEBOOK_DIR, 'index.ipynb')
 
 # html comment used to tag the location of the course information in each notebook
 COURSE_COMMENT = "<!--COURSE_INFORMATION-->"
+
+# course information header to be inserted into each notebook
 COURSE_INFO = COURSE_COMMENT + COURSE_INFO_HEADER
 
 # regular expression that matches notebook filenames to be included in the TOC
@@ -143,9 +186,8 @@ for n in notebooks:
 
 with open(README_FILE, 'w') as f:
     f.write(README_HEADER)
-    f.write(TOC_HEADER)
     f.write('\n'.join([n.toc_entry for n in notebooks]))
-    f.write('\n' + README_FOOTER)
+    f.write(README_FOOTER)
 
 with open(INDEX_FILE, 'w') as f:
     f.write(INDEX_HEADER)

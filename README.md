@@ -11,9 +11,7 @@ laptop you will need to install Jupyter and Python 3, such as the excellent
 
 Please let me know (jeff at nd.edu) if you any thoughts or suggestions on how these notebooks could be improved for 
 teaching and learning the principles of Process Operations.
-
 ### [Table of Contents](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/index.ipynb?flush=true)
-
 ### [Chapter 1. Getting Started Guides](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.00-Getting-Started-Guides.ipynb)
 - [1.1 Getting Started with CVXPY](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY.ipynb)
 - [1.2 Getting Started with Gurobi](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.02-Getting-Started-with-Gurobi.ipynb)

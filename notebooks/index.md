@@ -1,7 +1,4 @@
-
-# [Process Operations](http://jckantor.github.io/CBE40455/)
-
-
+[Process Operations](http://jckantor.github.io/CBE40455/)
 ### [Chapter 1. Getting Started Guides](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.00-Getting-Started-Guides.ipynb)
 - [1.1 Getting Started with CVXPY](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY.ipynb)
     - [Installation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY.ipynb#Installation)
