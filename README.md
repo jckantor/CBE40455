@@ -29,13 +29,13 @@ teaching and learning the principles of Process Operations.
 - [2.8 Decentralized Control in a Supply Chain](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb)
 
 ### [Chapter 3. Linear Optimization](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.00-Linear-Optimization.ipynb)
-- [3.1 Production Models with Constraints](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints-(Pyomo).ipynb)
-- [3.2 Transportation Networks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks-(Pyomo).ipynb)
+- [3.1 Production Models with Constraints](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints.ipynb)
+- [3.2 Transportation Networks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb)
 - [3.3 Data Reconciliation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.03-Data-Reconciliation.ipynb)
 
 ### [Chapter 4. Scheduling](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.00-Scheduling.ipynb)
 - [4.1 Critical Path Method](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.01-Critical-Path-Method.ipynb)
-- [4.2 Machine Bottleneck](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.02-Machine-Bottleneck-(Pyomo).ipynb)
+- [4.2 Machine Bottleneck](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.02-Machine-Bottleneck.ipynb)
 - [4.3 Job Shop Scheduling](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb)
 - [4.4 Jesuit Volunteer Corps](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.04-Jesuit-Volunteer-Corps.ipynb)
 - [4.5 Unit Commitment](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.05-Unit-Commitment.ipynb)
