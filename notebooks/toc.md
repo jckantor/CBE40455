@@ -181,7 +181,9 @@
 - [What is the incremental value of labor?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints.ipynb#What-is-the-incremental-value-of-labor?)
 - [Theory of Constraints](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints.ipynb#Theory-of-Constraints)
 * Figures
-    - [LP_ProductX](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/LP_ProductX.png)
+    - [LP_ProductX](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/LP_ProductX.png?raw=true)
+    - [LP_ProductY](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/LP_ProductY.png?raw=true)
+    - [LP_ProductXY](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/LP_ProductXY.png?raw=true)
 * Links
     - [Pyomo](http://www.pyomo.org/)
     - [glpk](https://en.wikibooks.org/wiki/GLPK)
