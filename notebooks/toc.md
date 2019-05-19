@@ -30,6 +30,7 @@
 - [Installing GLPK/MathProg to Run from a Jupyter Notebook](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#Installing-GLPK/MathProg-to-Run-from-a-Jupyter-Notebook)
     - [In the Cloud](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#In-the-Cloud)
     - [Google Colaboratory](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#Google-Colaboratory)
+    - [On your Laptop](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#On-your-Laptop)
     - [Testing](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#Testing)
 - [Running GLPK/MathProg from Code Cells](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#Running-GLPK/MathProg-from-Code-Cells)
 - [Specifying Input Files for MathProg](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#Specifying-Input-Files-for-MathProg)
@@ -41,12 +42,6 @@
     - [Binder](http://mybinder.org/badge.svg)
 * Links
     - [Jupyter notebook](http://jupyter.org/)
-    - [GNU MathProg is a Mathematical Programming Language](#GNU-MathProg-is-a-Mathematical-Programming-Language)
-    - [Installing GLPK/MathProg to Run from a Jupyter Notebook](#Installing-GLPK/MathProg-to-Run-from-a-Jupyter-Notebook)
-    - [Specifying Input Files for MathProg](#Specifying-Input-Files-for-MathProg)
-    - [Redirecting MathProg Output](#Redirecting-MathProg-Output)
-    - [Working with MathProg Tables](#Working)
-    - [Simple Scripting](#Simple-Scripting)
     - [GAMS](http://www.gams.com/)
     - [AIMMS](http://business.aimms.com/)
     - [AMPL](http://www.ampl.com/)
@@ -108,6 +103,7 @@
 ### [2.2 Model Development in SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Discrete-Event-Simulation-of-a-Batch-Process.ipynb)
 - [Processing the Simulation Log](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Discrete-Event-Simulation-of-a-Batch-Process.ipynb#Processing-the-Simulation-Log)
 - [Encapsulating a Process as a Python Class](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Discrete-Event-Simulation-of-a-Batch-Process.ipynb#Encapsulating-a-Process-as-a-Python-Class)
+- [References](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Discrete-Event-Simulation-of-a-Batch-Process.ipynb#References)
 * Links
     - [SimPy](https://bitbucket.org/simpy/simpy/)
     - [create generators](https://pythontips.com/2013/09/29/the-python-yield-keyword-explained/)
@@ -115,9 +111,14 @@
 
 ### [2.3 Queuing Systems](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb)
 - [Poisson Processes and Exponential Distributions](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Poisson-Processes-and-Exponential-Distributions)
+    - [Example: Simulate Customers Arriving at a Known Rate](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Example:-Simulate-Customers-Arriving-at-a-Known-Rate)
 - [Let's Provide Some Service to the Customers](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Let's-Provide-Some-Service-to-the-Customers)
 - [Little's Law](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Little's-Law)
+    - [Some analogies](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Some-analogies)
+    - [Why is this important?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Why-is-this-important?)
 - [Lognormal Distributions of Service Time](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Lognormal-Distributions-of-Service-Time)
+    - [Normal Distributions](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Normal-Distributions)
+    - [Lognormal Distribution](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Lognormal-Distribution)
 - [Random Service Time](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Random-Service-Time)
 - [Let's add multiple Queues](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Let's-add-multiple-Queues)
 * Links
@@ -179,12 +180,15 @@
 - [What are the active constraints?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints.ipynb#What-are-the-active-constraints?)
 - [What is the incremental value of labor?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints.ipynb#What-is-the-incremental-value-of-labor?)
 - [Theory of Constraints](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints.ipynb#Theory-of-Constraints)
+* Figures
+    - [LP_ProductX](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/LP_ProductX.png)
 * Links
     - [Pyomo](http://www.pyomo.org/)
     - [glpk](https://en.wikibooks.org/wiki/GLPK)
 
 ### [3.2 Transportation Networks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb)
 - [Background](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Background)
+        - [Table of Transportation Costs, Customer Demand, and Available Supplies](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Table-of-Transportation-Costs,-Customer-Demand,-and-Available-Supplies)
 - [Pyomo Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Pyomo-Model)
     - [Data File](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Data-File)
     - [Model File](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Model-File)
@@ -223,23 +227,22 @@
 - [Multiple Machines](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.02-Machine-Bottleneck.ipynb#Multiple-Machines)
 
 ### [4.3 Job Shop Scheduling](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb)
+- [Background](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Background)
+- [Job Shop Example](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Job-Shop-Example)
+- [Task Decomposition](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Task-Decomposition)
+- [Model Formulation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Model-Formulation)
+- [Pyomo Implementation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Pyomo-Implementation)
+- [Displaying a Solution](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Displaying-a-Solution)
+- [Visualizing Results with Gantt Charts](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Visualizing-Results-with-Gantt-Charts)
+- [Benchmark Problem LA19](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Benchmark-Problem-LA19)
+- [Application to Scheduling of Batch Processes](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Application-to-Scheduling-of-Batch-Processes)
+- [Single Product Strategies](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Single-Product-Strategies)
+- [Overlapping Tasks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Overlapping-Tasks)
+- [Unit Cleanout](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Unit-Cleanout)
+- [Zero Wait Policy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Zero-Wait-Policy)
 * Figures
     - [jobshopdiagram.jpg](attachment:jobshopdiagram.jpg)
     - [Screen%20Shot%202017-09-14%20at%209.09.57%20AM.png](attachment:Screen%20Shot%202017-09-14%20at%209.09.57%20AM.png)
-* Links
-    - [Background](#Background)
-    - [Job Shop Example](#JobShopExample)
-    - [Task Decomposition](#TaskDecomposition)
-    - [Model Formulation](#ModelFormulation)
-    - [Pyomo Implementation](#PyomoImplementation)
-    - [Displaying a Solution](#DisplayingSolution)
-    - [Visualzing Results using Gantt Charts](#Visualization)
-    - [Benchmark Problem LA19](#Benchmark)
-    - [Appication to Scheduling of Batch Processes](#BatchProcesses)
-    - [Single Product Strategies](#SingleProduct)
-    - [Overlapping Tasks](#OverlappingTasks)
-    - [Unit Cleanout](#UnitCleanout)
-    - [Zero-Wait Policy](#ZeroWait)
 
 ### [4.4 Jesuit Volunteer Corps](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.04-Jesuit-Volunteer-Corps.ipynb)
 - [Background](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.04-Jesuit-Volunteer-Corps.ipynb#Background)
@@ -260,7 +263,9 @@
     - [Dispa-Set](http://www.dispaset.eu/en/latest/)
 
 ### [4.6 Scheduling Multipurpose Batch Processes using State-Task Networks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb)
+    - [References](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#References)
 - [Example (Kondili, et al., 1993)](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#Example-(Kondili,-et-al.,-1993))
+    - [Exercise](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#Exercise)
 - [Encoding the STN data](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#Encoding-the-STN-data)
     - [Setting a Time Grid](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#Setting-a-Time-Grid)
 - [Creating a Pyomo Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#Creating-a-Pyomo-Model)
@@ -390,6 +395,7 @@
     - [Quandl Python package](http://www.quandl.com/help/packages#Python)
 
 ### [7.2 Geometric Brownian Motion](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb)
+- [Python Imports and Utility Functions](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Python-Imports-and-Utility-Functions)
 - [Statistical Properties of Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Statistical-Properties-of-Returns)
     - [Distribution of Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Distribution-of-Returns)
     - [Distribution of First Half versus Second Half of the Data Set](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Distribution-of-First-Half-versus-Second-Half-of-the-Data-Set)
@@ -398,6 +404,8 @@
 - [Fitting Returns to a Distribution](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Fitting-Returns-to-a-Distribution)
     - [Normal Distribution](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Normal-Distribution)
 - [Geometric Brownian Motion](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Geometric-Brownian-Motion)
+    - [Linear Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Linear-Returns)
+    - [Log Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Log-Returns)
     - [Forecasting](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Forecasting)
     - [Simulation using Generators](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Simulation-using-Generators)
 
@@ -419,7 +427,9 @@
 - [Implementing a Replicating Portfolio in Pyomo](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb#Implementing-a-Replicating-Portfolio-in-Pyomo)
 - [Example 1. Value of a fixed cash flow](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb#Example-1.-Value-of-a-fixed-cash-flow)
 - [Example 2. Simplico Gold Mine](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb#Example-2.-Simplico-Gold-Mine)
+    - [Solution](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb#Solution)
 - [Example 3. Simplico Gold Mine Capital Investment](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb#Example-3.-Simplico-Gold-Mine-Capital-Investment)
+- [Price Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb#Price-Model)
 - [Growth Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb#Growth-Model)
 * Figures
     - [../img/TimelineRealOption.png](../img/TimelineRealOption.png)
@@ -435,6 +445,7 @@
 - [Covariance and Correlation Matrices](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb#Covariance-and-Correlation-Matrices)
     - [Visualizing the correlation coefficients](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb#Visualizing-the-correlation-coefficients)
 - [Creating Portfolios](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb#Creating-Portfolios)
+    - [Mean Return and Variance of a Portfolio](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb#Mean-Return-and-Variance-of-a-Portfolio)
 - [Examples of Portfolios with Two Assets](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb#Examples-of-Portfolios-with-Two-Assets)
 - [Minimum Risk Portfolio](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb#Minimum-Risk-Portfolio)
     - [Pyomo Model and Solution](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb#Pyomo-Model-and-Solution)
@@ -496,9 +507,8 @@
 - [Example 3. Stock/Bond Portfolio in Continuous Time](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.09-Log-Optimal-Portfolios.ipynb#Example-3.-Stock/Bond-Portfolio-in-Continuous-Time)
 - [Volatility Pumping](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.09-Log-Optimal-Portfolios.ipynb#Volatility-Pumping)
 * Figures
-    - [Kelly_Criterion_Fig2](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Fig2.pdf?raw=true)
-* Links
-    - [IPython notebook](http://ipython.org/notebook.html)
+    - [Kelly_Criterion_Fig2](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Fig2.png?raw=true)
+    - [Kelly_Criterion_Volatility_Pumping](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Volatility_Pumping.png?raw=true)
 
 
 ## [Chapter 8. Optimization in Google Sheets](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/08.00-Optimization-in-Google-Sheets.ipynb)
