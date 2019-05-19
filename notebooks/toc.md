@@ -496,7 +496,7 @@
 - [Example 3. Stock/Bond Portfolio in Continuous Time](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.09-Log-Optimal-Portfolios.ipynb#Example-3.-Stock/Bond-Portfolio-in-Continuous-Time)
 - [Volatility Pumping](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.09-Log-Optimal-Portfolios.ipynb#Volatility-Pumping)
 * Figures
-    - [Kelly_Criterion_Fig2](http://figures/Kelly_Criterion_Fig2.png)
+    - [Kelly_Criterion_Fig2](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Fig2.pdf?raw=true)
 * Links
     - [IPython notebook](http://ipython.org/notebook.html)
 
