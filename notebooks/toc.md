@@ -187,7 +187,7 @@
 
 ### [3.2 Transportation Networks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb)
 - [Background](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Background)
-        - [Table of Transportation Costs, Customer Demand, and Available Supplies](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Table-of-Transportation-Costs,-Customer-Demand,-and-Available-Supplies)
+    - [Table of Transportation Costs, Customer Demand, and Available Supplies](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Table-of-Transportation-Costs,-Customer-Demand,-and-Available-Supplies)
 - [Pyomo Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Pyomo-Model)
     - [Data File](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Data-File)
     - [Model File](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Model-File)
@@ -267,7 +267,7 @@
     - [Dispa-Set](http://www.dispaset.eu/en/latest/)
 
 ### [4.6 Scheduling Multipurpose Batch Processes using State-Task Networks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb)
-    - [References](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#References)
+- [References](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#References)
 - [Example (Kondili, et al., 1993)](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#Example-(Kondili,-et-al.,-1993))
     - [Exercise](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#Exercise)
 - [Encoding the STN data](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#Encoding-the-STN-data)
@@ -383,9 +383,9 @@
     - [Google Finance](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Google-Finance)
     - [Quandl](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Quandl)
 - [Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Returns)
-    - [Linear fractional (or Arithmetic) Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Linear-fractional-(or-Arithmetic)-Returns)
+    - [Linear fractional or Arithmetic Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Linear-fractional-or-Arithmetic-Returns)
     - [Linear returns don't tell the whole story.](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Linear-returns-don't-tell-the-whole-story.)
-    - [Compounded (Log) Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Compounded-(Log)-Returns)
+    - [Compounded Log Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Compounded-Log-Returns)
     - [Volatility Drag and the Relationship between Linear and Log Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Volatility-Drag-and-the-Relationship-between-Linear-and-Log-Returns)
 * Links
     - [Yahoo Finance](http://finance.yahoo.com/)
