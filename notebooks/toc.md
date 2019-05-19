@@ -199,6 +199,11 @@
     - [Analysis by Source](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Analysis-by-Source)
     - [Analysis by Customer](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Analysis-by-Customer)
 - [Exercises](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Exercises)
+* Figures
+    - [TransportationNetworksMap.png](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportationNetworksMap.png?raw=true)
+    - [TransportNet](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportNet.png?raw=true)
+    - [TransportNet_soln.png](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportNet_soln.png?raw=true)
+    - [TransportNet_sens](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportNet_sens.png?raw=true)
 * Links
     - [pdf available](http://download.aimms.com/aimms/download/manuals/AIMMS3_OM.pdf)
 
