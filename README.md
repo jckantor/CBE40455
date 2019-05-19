@@ -1,5 +1,5 @@
 
-# Process Operations
+# CBE 40455 Process Operations
 
 This repository comprises a collection of Jupyter/Python notebooks in support of **CBE 40455 Process Operations**
 taught at the University of Notre Dame.
@@ -11,7 +11,7 @@ laptop you will need to install Jupyter and Python 3, such as the excellent
 
 Please let me know (jeff at nd.edu) if you any thoughts or suggestions on how these notebooks could be improved for 
 teaching and learning the principles of Process Operations.
-### [Table of Contents](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/index.ipynb?flush=true)
+### [Table of Contents](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/toc.ipynb?flush=true)
 ### [Chapter 1. Getting Started Guides](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.00-Getting-Started-Guides.ipynb)
 - [1.1 Getting Started with CVXPY](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY.ipynb)
 - [1.2 Getting Started with Gurobi](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.02-Getting-Started-with-Gurobi.ipynb)
@@ -73,7 +73,7 @@ teaching and learning the principles of Process Operations.
 ### [Chapter 9. Student Projects](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/09.00-Student-Projects.ipynb)
 
 **License Requirements.** The materials in this repository are available at 
-[http://github.com/jckantor/CBE40455](http://github.com/jckantor/CBE40455) for noncommercial use under terms of the 
+[https://github.com/jckantor/CBE40455/](https://github.com/jckantor/CBE40455/) for noncommercial use under terms of the 
 [Creative Commons Attribution Noncommericial ShareAlike License](http://creativecommons.org/licenses/by-nc-sa/4.0/). 
 You are invited to fork this repository, and to use, adapt, remix these material for non-commericial purposes. The 
 license terms require you to give attribution and share your work under the same terms. Pull requests for corrections 
