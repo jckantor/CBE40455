@@ -202,7 +202,7 @@
 * Figures
     - [TransportationNetworksMap.png](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportationNetworksMap.png?raw=true)
     - [TransportNet](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportNet.png?raw=true)
-    - [TransportNet_soln.png](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportNet_soln.png?raw=true)
+    - [TransportNet_soln](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportNet_soln.png?raw=true)
     - [TransportNet_sens](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportNet_sens.png?raw=true)
 * Links
     - [pdf available](http://download.aimms.com/aimms/download/manuals/AIMMS3_OM.pdf)
@@ -503,6 +503,10 @@
     - [Maximizing Growth](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.08-Log-Optimal-Growth-and-the-Kelly-Criterion.ipynb#Maximizing-Growth)
 - [Kelly's Criterion: Maximizing Growth for a Game with Arbitrary Odds](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.08-Log-Optimal-Growth-and-the-Kelly-Criterion.ipynb#Kelly's-Criterion:-Maximizing-Growth-for-a-Game-with-Arbitrary-Odds)
 - [Volatility Pumping](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.08-Log-Optimal-Growth-and-the-Kelly-Criterion.ipynb#Volatility-Pumping)
+* Figures
+    - [Kelly_Criterion_Fig1](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Fig1.png?raw=true)
+    - [Kelly_Criterion_Fig2](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Fig2.png?raw=true)
+    - [Kelly_Criterion_Volatility_Pumping](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Volatility_Pumping.png?raw=true)
 * Links
     - [IPython notebook](http://ipython.org/notebook.html)
 
