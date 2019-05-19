@@ -4,6 +4,8 @@
 .texpadtmp
 .DS_Store
 
+in-development/
+
 *.csv
 
 *.acn

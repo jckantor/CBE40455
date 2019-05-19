@@ -38,8 +38,6 @@
 - [Working with MathProg Tables](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#Working-with-MathProg-Tables)
     - [Reading and Writing Data from .csv Files](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#Reading-and-Writing-Data-from-.csv-Files)
     - [MathProg implementation of Geometric Brownian Motion](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#MathProg-implementation-of-Geometric-Brownian-Motion)
-* Figures
-    - [Binder](http://mybinder.org/badge.svg)
 * Links
     - [Jupyter notebook](http://jupyter.org/)
     - [GAMS](http://www.gams.com/)
@@ -54,7 +52,6 @@
     - [lpsolve](http://lpsolve.sourceforge.net/5.5/MathProg.htm)
     - [CBE40455](https://github.com/jckantor/CBE40455)
     - [mybinder.org](http://mybinder.org)
-    - [![Binder](http://mybinder.org/badge.svg)
     - [mybinder.org](http://mybinder.org)
     - [Anaconda](https://www.continuum.io/downloads)
     - [Enthought Canopy](https://store.enthought.com/downloads/#default)
@@ -425,8 +422,8 @@
 - [Early Exercise](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.03-Binomial-Model-for-Pricing-Options.ipynb#Early-Exercise)
 - [American Put Option](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.03-Binomial-Model-for-Pricing-Options.ipynb#American-Put-Option)
 * Figures
-    - [../img/BinomialModel.png](../img/BinomialModel.png)
-    - [../img/BinomialModel_Options.png](../img/BinomialModel_Options.png)
+    - [BinomialModel](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/BinomialModel.png?raw=true)
+    - [BinomialModel_Options](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/BinomialModel_Options.png?raw=true)
 * Links
     - [Luenberger (2013)](https://global.oup.com/ushe/product/investment-science-9780199740086?cc=us&lang=en&)
 
