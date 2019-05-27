@@ -22,7 +22,7 @@ teaching and learning the principles of Process Operations.
 - [2.1 Getting Started with SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.01-Getting-Started-with-SimPy.ipynb)
 - [2.2 Model Development in SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Discrete-Event-Simulation-of-a-Batch-Process.ipynb)
 - [2.3 Queuing Systems](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb)
-- [2.4 Spanky's Pizzeria](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spanky's-Pizzeria.ipynb)
+- [2.4 Spankys Pizzeria](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb)
 - [2.5 Warehouse Fulfullment Operations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb)
 - [2.6 Geometric Brownian Price Process](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Geometric-Brownian-Price-Process.ipynb)
 - [2.7 Continuous Time Simulation in SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.07-Continuous-Time-Simulation-in-SimPy.ipynb)

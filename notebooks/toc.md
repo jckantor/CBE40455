@@ -122,12 +122,12 @@
     - [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution)
     - [Little's law](http://web.mit.edu/sgraves/www/papers/Little's%20Law-Published.pdf)
 
-### [2.4 Spanky's Pizzeria](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spanky's-Pizzeria.ipynb)
-- [Menu](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spanky's-Pizzeria.ipynb#Menu)
-- [Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spanky's-Pizzeria.ipynb#Model)
-- [Simulation of Existing Operations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spanky's-Pizzeria.ipynb#Simulation-of-Existing-Operations)
-- [Should Spanky's add additional ovens?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spanky's-Pizzeria.ipynb#Should-Spanky's-add-additional-ovens?)
-- [Should Spanky's add additional servers?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spanky's-Pizzeria.ipynb#Should-Spanky's-add-additional-servers?)
+### [2.4 Spankys Pizzeria](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb)
+- [Menu](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb#Menu)
+- [Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb#Model)
+- [Simulation of Existing Operations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb#Simulation-of-Existing-Operations)
+- [Should Spanky's add additional ovens?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb#Should-Spanky's-add-additional-ovens?)
+- [Should Spanky's add additional servers?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb#Should-Spanky's-add-additional-servers?)
 
 ### [2.5 Warehouse Fulfullment Operations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb)
 - [Order Fulfillment Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Order-Fulfillment-Model)
