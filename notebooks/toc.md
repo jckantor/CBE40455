@@ -1,7 +1,7 @@
-# [CBE 40455 Process Operations](http://jckantor.github.io/CBE40455/)
+# [CBE40455](https://jckantor.github.io/CBE40455)
 
 
-## [Chapter 1. Getting Started Guides](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.00-Getting-Started-Guides.ipynb)
+## [Chapter 1.0 Getting Started Guides](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.00-Getting-Started-Guides.ipynb)
 
 ### [1.1 Getting Started with CVXPY](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY.ipynb)
 - [Installation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY.ipynb#Installation)
@@ -81,7 +81,7 @@
     - [Python code](https://www.quandl.com/data/SCF/CME_CL1_FN-NYMEX-WTI-Crude-Oil-Futures-1-CL1-Front-Month-Unadjusted-Prices-Roll-on-First-of-Month-Continuous-Contract-History)
 
 
-## [Chapter 2. Simulation of Discrete Event Systems](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.00-Simulation-of-Discrete-Event-Systems.ipynb)
+## [Chapter 2.0 Simulation of Discrete Event Systems](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.00-Simulation-of-Discrete-Event-Systems.ipynb)
 
 ### [2.1 Getting Started with SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.01-Getting-Started-with-SimPy.ipynb)
 - [Introduction to Modeling with SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.01-Getting-Started-with-SimPy.ipynb#Introduction-to-Modeling-with-SimPy)
@@ -164,7 +164,7 @@
     - [Closed-Loop Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb#Closed-Loop-Model)
 
 
-## [Chapter 3. Linear Optimization](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.00-Linear-Optimization.ipynb)
+## [Chapter 3.0 Linear Optimization](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.00-Linear-Optimization.ipynb)
 
 ### [3.1 Production Models with Constraints](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints.ipynb)
 - [Initializations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints.ipynb#Initializations)
@@ -210,7 +210,7 @@
 - [Visualization](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.03-Data-Reconciliation.ipynb#Visualization)
 
 
-## [Chapter 4. Scheduling](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.00-Scheduling.ipynb)
+## [Chapter 4.0 Scheduling](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.00-Scheduling.ipynb)
 
 ### [4.1 Critical Path Method](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.01-Critical-Path-Method.ipynb)
 - [Background](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.01-Critical-Path-Method.ipynb#Background)
@@ -288,7 +288,7 @@
     - [Screen%20Shot%202017-09-16%20at%209.45.36%20PM.png](attachment:Screen%20Shot%202017-09-16%20at%209.45.36%20PM.png)
 
 
-## [Chapter 5. Logistics](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.00-Logistics.ipynb)
+## [Chapter 5.0 Logistics](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.00-Logistics.ipynb)
 
 ### [5.1 Economic Order Quantity](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.01-Economic-Order-Quantity.ipynb)
 - [Initializations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.01-Economic-Order-Quantity.ipynb#Initializations)
@@ -330,7 +330,7 @@
     - [IPython notebook](http://ipython.org/notebook.html)
 
 
-## [Chapter 6. Optimization under Uncertainty](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/06.00-Optimization-under-Uncertainty.ipynb)
+## [Chapter 6.0 Optimization under Uncertainty](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/06.00-Optimization-under-Uncertainty.ipynb)
 
 ### [6.1 Newsvendor Problem](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/06.01-Newsvendor-Problem.ipynb)
 - [Background](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/06.01-Newsvendor-Problem.ipynb#Background)
@@ -374,7 +374,7 @@
     - [Georgia Tech at Notre Dame, 2015](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/06.05-Points-after-Touchdown-Decision.ipynb#Georgia-Tech-at-Notre-Dame,-2015)
 
 
-## [Chapter 7. Risk and Diversification](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.00-Risk-and-Diversification.ipynb)
+## [Chapter 7.0 Risk and Diversification](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.00-Risk-and-Diversification.ipynb)
 
 ### [7.1 Measuring Return](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb)
 - [Imports](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Imports)
@@ -519,7 +519,7 @@
     - [Kelly_Criterion_Volatility_Pumping](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Volatility_Pumping.png?raw=true)
 
 
-## [Chapter 8. Optimization in Google Sheets](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/08.00-Optimization-in-Google-Sheets.ipynb)
+## [Chapter 8.0 Optimization in Google Sheets](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/08.00-Optimization-in-Google-Sheets.ipynb)
 * Links
     - [Production Planning with Constraints (Google Sheet)](https://docs.google.com/spreadsheets/d/1StL_Z-GnE23LuS93mr9fybxmcAopFuWVvGTauJgvxng/edit?usp=sharing)
     - [SEMD Refinery (Google Sheet)](https://docs.google.com/spreadsheets/d/1x-DX4rnt6LCLiDpuSEwZDF0zs5mpVrpcjlU5kb2dmUA/edit?usp=sharing)
@@ -532,4 +532,4 @@
     - [Soduko Solver 4x4 (Google Sheet)](https://docs.google.com/spreadsheets/d/1XMkn64lSKxzxcSeIDBJjEGiI5eUU8f90gEiPQ2JKLOk/edit?usp=sharing)
 
 
-## [Chapter 9. Student Projects](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/09.00-Student-Projects.ipynb)
+## [Chapter 9.0 Student Projects](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/09.00-Student-Projects.ipynb)
