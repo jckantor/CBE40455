@@ -9,7 +9,7 @@
     - [Using Matrix Parameters and Vector Variables](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY.ipynb#Using-Matrix-Parameters-and-Vector-Variables)
 - [Regression: Evidence of Climate Change](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY.ipynb#Regression:-Evidence-of-Climate-Change)
 - [Integer Program](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.01-Getting-Started-with-CVXPY.ipynb#Integer-Program)
-* Links
+* Markdown Links
     - [Jupyter notebook](http://jupyter.org/notebook.html)
     - [CVXPY](http://www.cvxpy.org/en/latest/)
     - [here (.pdf)](https://media.readthedocs.org/pdf/cvxpy/latest/cvxpy.pdf)
@@ -22,7 +22,7 @@
     - [Problem Data](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.02-Getting-Started-with-Gurobi.ipynb#Problem-Data)
     - [Model and Optimization](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.02-Getting-Started-with-Gurobi.ipynb#Model-and-Optimization)
     - [Solution](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.02-Getting-Started-with-Gurobi.ipynb#Solution)
-* Links
+* Markdown Links
     - [Gurobi](http://www.gurobi.com)
 
 ### [1.3 Getting Started with GNU MathProg in Jupyter Notebooks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb)
@@ -38,7 +38,7 @@
 - [Working with MathProg Tables](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#Working-with-MathProg-Tables)
     - [Reading and Writing Data from .csv Files](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#Reading-and-Writing-Data-from-.csv-Files)
     - [MathProg implementation of Geometric Brownian Motion](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.03-Getting-Started-with-GNU-MathProg.ipynb#MathProg-implementation-of-Geometric-Brownian-Motion)
-* Links
+* Markdown Links
     - [Jupyter notebook](http://jupyter.org/)
     - [GAMS](http://www.gams.com/)
     - [AIMMS](http://business.aimms.com/)
@@ -67,9 +67,9 @@
 - [Reading Inventory Data from a Spreadsheet](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.04-Getting-Started-with-Pandas.ipynb#Reading-Inventory-Data-from-a-Spreadsheet)
 - [Reading Futures Data with a Web API](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.04-Getting-Started-with-Pandas.ipynb#Reading-Futures-Data-with-a-Web-API)
 - [Term Structure of Oil Futures](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/01.04-Getting-Started-with-Pandas.ipynb#Term-Structure-of-Oil-Futures)
-* Figures
+* Markdown Figures
     - [Screen%20Shot%202017-09-27%20at%2011.06.18%20AM.png](attachment:Screen%20Shot%202017-09-27%20at%2011.06.18%20AM.png)
-* Links
+* Markdown Links
     - [Pandas](http://pandas.pydata.org/)
     - [pandas-dev Cheat Sheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf)
     - [Datacamp Cheat Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PandasPythonForDataScience.pdf)
@@ -93,75 +93,92 @@
     - [Adding a Reporter](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.01-Getting-Started-with-SimPy.ipynb#Adding-a-Reporter)
 - [Application Examples](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.01-Getting-Started-with-SimPy.ipynb#Application-Examples)
 - [Multiple Roombas](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.01-Getting-Started-with-SimPy.ipynb#Multiple-Roombas)
-* Links
+* Markdown Links
     - [SimPy](http://simpy.readthedocs.org/en/latest/)
     - [Introduction to Modeling with SimPy]()
 
-### [2.2 Model Development in SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Discrete-Event-Simulation-of-a-Batch-Process.ipynb)
-- [Processing the Simulation Log](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Discrete-Event-Simulation-of-a-Batch-Process.ipynb#Processing-the-Simulation-Log)
-- [Encapsulating a Process as a Python Class](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Discrete-Event-Simulation-of-a-Batch-Process.ipynb#Encapsulating-a-Process-as-a-Python-Class)
-- [References](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Discrete-Event-Simulation-of-a-Batch-Process.ipynb#References)
-* Links
+### [2.2 Queuing Systems](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb)
+- [Poisson Processes and Exponential Distributions](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb#Poisson-Processes-and-Exponential-Distributions)
+    - [Example: Simulate Customers Arriving at a Known Rate](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb#Example:-Simulate-Customers-Arriving-at-a-Known-Rate)
+- [Let's Provide Some Service to the Customers](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb#Let's-Provide-Some-Service-to-the-Customers)
+- [Little's Law](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb#Little's-Law)
+    - [Some analogies](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb#Some-analogies)
+    - [Why is this important?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb#Why-is-this-important?)
+- [Lognormal Distributions of Service Time](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb#Lognormal-Distributions-of-Service-Time)
+    - [Normal Distributions](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb#Normal-Distributions)
+    - [Lognormal Distribution](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb#Lognormal-Distribution)
+- [Random Service Time](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb#Random-Service-Time)
+- [Let's add multiple Queues](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.02-Queuing-Systems.ipynb#Let's-add-multiple-Queues)
+* Markdown Links
+    - [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution)
+    - [Little's law](http://web.mit.edu/sgraves/www/papers/Little's%20Law-Published.pdf)
+
+### [2.3 Emergency Room Simulation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb)
+- [Initializations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Initializations)
+- [Poisson processes](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Poisson-processes)
+- [Modeling patient arrivals as a Poisson process](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Modeling-patient-arrivals-as-a-Poisson-process)
+    - [Version 1. Basic simulation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Version-1.-Basic-simulation)
+    - [Version 2. Adding an event log](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Version-2.-Adding-an-event-log)
+    - [Version 3. Converting the log to a Pandas DataFrame](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Version-3.-Converting-the-log-to-a-Pandas-DataFrame)
+    - [Version 4. Plotting the DataFrame](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Version-4.-Plotting-the-DataFrame)
+- [Version 5. Modeling the emergency room queue and service providers](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Version-5.-Modeling-the-emergency-room-queue-and-service-providers)
+- [Version 6. How many service providers are required?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Version-6.-How-many-service-providers-are-required?)
+    - [Calculating and plotting wait times](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Calculating-and-plotting-wait-times)
+    - [Histogram of wait times](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Histogram-of-wait-times)
+- [Exercise: Further model development](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Emergency_Room_Simulation.ipynb#Exercise:-Further-model-development)
+* Markdown Links
+    - [Poisson Process](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-262-discrete-stochastic-processes-spring-2011/course-notes/MIT6_262S11_chap02.pdf)
+    - [simpy.Stores](https://simpy.readthedocs.io/en/latest/topical_guides/resources.html#stores)
+
+### [2.4 Model Development in SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Discrete-Event-Simulation-of-a-Batch-Process.ipynb)
+- [Processing the Simulation Log](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Discrete-Event-Simulation-of-a-Batch-Process.ipynb#Processing-the-Simulation-Log)
+- [Encapsulating a Process as a Python Class](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Discrete-Event-Simulation-of-a-Batch-Process.ipynb#Encapsulating-a-Process-as-a-Python-Class)
+- [References](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Discrete-Event-Simulation-of-a-Batch-Process.ipynb#References)
+* Markdown Links
     - [SimPy](https://bitbucket.org/simpy/simpy/)
     - [create generators](https://pythontips.com/2013/09/29/the-python-yield-keyword-explained/)
     - [Store](http://simpy.readthedocs.io/en/latest/api_reference/simpy.resources.html)
 
-### [2.3 Queuing Systems](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb)
-- [Poisson Processes and Exponential Distributions](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Poisson-Processes-and-Exponential-Distributions)
-    - [Example: Simulate Customers Arriving at a Known Rate](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Example:-Simulate-Customers-Arriving-at-a-Known-Rate)
-- [Let's Provide Some Service to the Customers](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Let's-Provide-Some-Service-to-the-Customers)
-- [Little's Law](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Little's-Law)
-    - [Some analogies](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Some-analogies)
-    - [Why is this important?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Why-is-this-important?)
-- [Lognormal Distributions of Service Time](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Lognormal-Distributions-of-Service-Time)
-    - [Normal Distributions](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Normal-Distributions)
-    - [Lognormal Distribution](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Lognormal-Distribution)
-- [Random Service Time](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Random-Service-Time)
-- [Let's add multiple Queues](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.03-Queuing-Systems.ipynb#Let's-add-multiple-Queues)
-* Links
-    - [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution)
-    - [Little's law](http://web.mit.edu/sgraves/www/papers/Little's%20Law-Published.pdf)
+### [2.5 Spankys Pizzeria](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Spankys-Pizzeria.ipynb)
+- [Menu](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Spankys-Pizzeria.ipynb#Menu)
+- [Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Spankys-Pizzeria.ipynb#Model)
+- [Simulation of Existing Operations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Spankys-Pizzeria.ipynb#Simulation-of-Existing-Operations)
+- [Should Spanky's add additional ovens?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Spankys-Pizzeria.ipynb#Should-Spanky's-add-additional-ovens?)
+- [Should Spanky's add additional servers?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Spankys-Pizzeria.ipynb#Should-Spanky's-add-additional-servers?)
 
-### [2.4 Spankys Pizzeria](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb)
-- [Menu](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb#Menu)
-- [Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb#Model)
-- [Simulation of Existing Operations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb#Simulation-of-Existing-Operations)
-- [Should Spanky's add additional ovens?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb#Should-Spanky's-add-additional-ovens?)
-- [Should Spanky's add additional servers?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.04-Spankys-Pizzeria.ipynb#Should-Spanky's-add-additional-servers?)
-
-### [2.5 Warehouse Fulfullment Operations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb)
-- [Order Fulfillment Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Order-Fulfillment-Model)
-    - [Order Processing](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Order-Processing)
-    - [Order Generator](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Order-Generator)
-    - [Event Logging](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Event-Logging)
-    - [Fulfillment Class](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Fulfillment-Class)
-    - [Simulation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Simulation)
-- [Analyzing Results](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Analyzing-Results)
-    - [Total Processing Time](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Total-Processing-Time)
-    - [Time to Assign Picker](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Time-to-Assign-Picker)
-    - [Time to Pick Order](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Time-to-Pick-Order)
-    - [Time to Assign Reviewer](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Time-to-Assign-Reviewer)
-    - [Time to Review Order](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Time-to-Review-Order)
-    - [Time to Ship](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.05-Warehouse-Fulfillment-Operations.ipynb#Time-to-Ship)
-* Links
+### [2.6 Warehouse Fulfullment Operations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb)
+- [Order Fulfillment Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Order-Fulfillment-Model)
+    - [Order Processing](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Order-Processing)
+    - [Order Generator](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Order-Generator)
+    - [Event Logging](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Event-Logging)
+    - [Fulfillment Class](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Fulfillment-Class)
+    - [Simulation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Simulation)
+- [Analyzing Results](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Analyzing-Results)
+    - [Total Processing Time](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Total-Processing-Time)
+    - [Time to Assign Picker](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Time-to-Assign-Picker)
+    - [Time to Pick Order](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Time-to-Pick-Order)
+    - [Time to Assign Reviewer](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Time-to-Assign-Reviewer)
+    - [Time to Review Order](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Time-to-Review-Order)
+    - [Time to Ship](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Warehouse-Fulfillment-Operations.ipynb#Time-to-Ship)
+* Markdown Links
     - [SimPy](http://simpy.readthedocs.org/en/latest/)
 
-### [2.6 Geometric Brownian Price Process](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Geometric-Brownian-Price-Process.ipynb)
-- [Multiple Simulations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.06-Geometric-Brownian-Price-Process.ipynb#Multiple-Simulations)
+### [2.7 Geometric Brownian Price Process](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.07-Geometric-Brownian-Price-Process.ipynb)
+- [Multiple Simulations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.07-Geometric-Brownian-Price-Process.ipynb#Multiple-Simulations)
 
-### [2.7 Continuous Time Simulation in SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.07-Continuous-Time-Simulation-in-SimPy.ipynb)
+### [2.8 Continuous Time Simulation in SimPy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Continuous-Time-Simulation-in-SimPy.ipynb)
 
-### [2.8 Decentralized Control in a Supply Chain](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb)
-- [Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb#Model)
-    - [Inventory Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb#Inventory-Model)
-    - [Deviation Variables](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb#Deviation-Variables)
-    - [Inventory Model in Deviation Variables](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb#Inventory-Model-in-Deviation-Variables)
-- [Ordering Policies](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb#Ordering-Policies)
-    - [Feed-forward Ordering based on Customer Demand](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb#Feed-forward-Ordering-based-on-Customer-Demand)
-    - [Ordering based on Feedback Control of Inventory](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb#Ordering-based-on-Feedback-Control-of-Inventory)
-    - [Ordering based on 2DOF Feedback Control of Inventory](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb#Ordering-based-on-2DOF-Feedback-Control-of-Inventory)
-    - [A 3 DOF Feed-forward plus Feedback Ordering Policy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb#A-3-DOF-Feed-forward-plus-Feedback-Ordering-Policy)
-    - [Closed-Loop Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.08-Decentralized-Control-in-a-Supply-Chain.ipynb#Closed-Loop-Model)
+### [2.9 Decentralized Control in a Supply Chain](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.09-Decentralized-Control-in-a-Supply-Chain.ipynb)
+- [Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.09-Decentralized-Control-in-a-Supply-Chain.ipynb#Model)
+    - [Inventory Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.09-Decentralized-Control-in-a-Supply-Chain.ipynb#Inventory-Model)
+    - [Deviation Variables](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.09-Decentralized-Control-in-a-Supply-Chain.ipynb#Deviation-Variables)
+    - [Inventory Model in Deviation Variables](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.09-Decentralized-Control-in-a-Supply-Chain.ipynb#Inventory-Model-in-Deviation-Variables)
+- [Ordering Policies](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.09-Decentralized-Control-in-a-Supply-Chain.ipynb#Ordering-Policies)
+    - [Feed-forward Ordering based on Customer Demand](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.09-Decentralized-Control-in-a-Supply-Chain.ipynb#Feed-forward-Ordering-based-on-Customer-Demand)
+    - [Ordering based on Feedback Control of Inventory](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.09-Decentralized-Control-in-a-Supply-Chain.ipynb#Ordering-based-on-Feedback-Control-of-Inventory)
+    - [Ordering based on 2DOF Feedback Control of Inventory](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.09-Decentralized-Control-in-a-Supply-Chain.ipynb#Ordering-based-on-2DOF-Feedback-Control-of-Inventory)
+    - [A 3 DOF Feed-forward plus Feedback Ordering Policy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.09-Decentralized-Control-in-a-Supply-Chain.ipynb#A-3-DOF-Feed-forward-plus-Feedback-Ordering-Policy)
+    - [Closed-Loop Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/02.09-Decentralized-Control-in-a-Supply-Chain.ipynb#Closed-Loop-Model)
 
 
 ## [Chapter 3.0 Linear Optimization](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.00-Linear-Optimization.ipynb)
@@ -177,11 +194,11 @@
 - [What are the active constraints?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints.ipynb#What-are-the-active-constraints?)
 - [What is the incremental value of labor?](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints.ipynb#What-is-the-incremental-value-of-labor?)
 - [Theory of Constraints](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.01-Production-Models-with-Constraints.ipynb#Theory-of-Constraints)
-* Figures
+* Markdown Figures
     - [LP_ProductX](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/LP_ProductX.png?raw=true)
     - [LP_ProductY](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/LP_ProductY.png?raw=true)
     - [LP_ProductXY](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/LP_ProductXY.png?raw=true)
-* Links
+* Markdown Links
     - [Pyomo](http://www.pyomo.org/)
     - [glpk](https://en.wikibooks.org/wiki/GLPK)
 
@@ -196,12 +213,12 @@
     - [Analysis by Source](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Analysis-by-Source)
     - [Analysis by Customer](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Analysis-by-Customer)
 - [Exercises](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.02-Transportation-Networks.ipynb#Exercises)
-* Figures
+* Markdown Figures
     - [TransportationNetworksMap.png](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportationNetworksMap.png?raw=true)
     - [TransportNet](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportNet.png?raw=true)
     - [TransportNet_soln](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportNet_soln.png?raw=true)
     - [TransportNet_sens](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/TransportNet_sens.png?raw=true)
-* Links
+* Markdown Links
     - [pdf available](http://download.aimms.com/aimms/download/manuals/AIMMS3_OM.pdf)
 
 ### [3.3 Data Reconciliation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/03.03-Data-Reconciliation.ipynb)
@@ -217,7 +234,7 @@
 - [MathProg Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.01-Critical-Path-Method.ipynb#MathProg-Model)
 - [Example: Stadium Construction](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.01-Critical-Path-Method.ipynb#Example:-Stadium-Construction)
 - [Visualization](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.01-Critical-Path-Method.ipynb#Visualization)
-* Links
+* Markdown Links
     - [Example 7.1.1](http://www.maximalsoftware.com/modellib/modXpressMP.html)
     - [Christelle Gueret, Christian Prins, Marc Sevaux, "Applications of Optimization with Xpress-MP," Chapter 7, Dash Optimization, 2000](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.9634&rep=rep1&type=pdf)
 
@@ -244,7 +261,7 @@
 - [Overlapping Tasks](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Overlapping-Tasks)
 - [Unit Cleanout](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Unit-Cleanout)
 - [Zero Wait Policy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.03-Job-Shop-Scheduling.ipynb#Zero-Wait-Policy)
-* Figures
+* Markdown Figures
     - [jobshopdiagram.jpg](attachment:jobshopdiagram.jpg)
     - [Screen%20Shot%202017-09-14%20at%209.09.57%20AM.png](attachment:Screen%20Shot%202017-09-14%20at%209.09.57%20AM.png)
 
@@ -262,7 +279,7 @@
     - [Unit Commitment Strategy](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.05-Unit-Commitment.ipynb#Unit-Commitment-Strategy)
 - [Unit Commitment Model 2. Variable Demand without Uptime or Downtime Constraints](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.05-Unit-Commitment.ipynb#Unit-Commitment-Model-2.-Variable-Demand-without-Uptime-or-Downtime-Constraints)
 - [Unit Commitment Model 3. Variable Demand with Uptime and Downtime Constraints](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.05-Unit-Commitment.ipynb#Unit-Commitment-Model-3.-Variable-Demand-with-Uptime-and-Downtime-Constraints)
-* Links
+* Markdown Links
     - [Unit Commitment](https://yalmip.github.io/example/unitcommitment/)
     - [Dispa-Set](http://www.dispaset.eu/en/latest/)
 
@@ -284,7 +301,7 @@
     - [Unit Batch Inventories](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#Unit-Batch-Inventories)
     - [Gannt Chart](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#Gannt-Chart)
 - [Trace of Events and States](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/04.06-Scheduling-Multipurpose-Batch-Processes-using-State-Task-Networks.ipynb#Trace-of-Events-and-States)
-* Figures
+* Markdown Figures
     - [Screen%20Shot%202017-09-16%20at%209.45.36%20PM.png](attachment:Screen%20Shot%202017-09-16%20at%209.45.36%20PM.png)
 
 
@@ -293,7 +310,7 @@
 ### [5.1 Economic Order Quantity](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.01-Economic-Order-Quantity.ipynb)
 - [Initializations](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.01-Economic-Order-Quantity.ipynb#Initializations)
 - [Economic Order Quantity (EOQ)](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.01-Economic-Order-Quantity.ipynb#Economic-Order-Quantity-(EOQ))
-* Links
+* Markdown Links
     - [Jupyter notebook](http://jupyter.org/notebook.html)
 
 ### [5.2 Assignment Problems](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.02-Assignment-Problems.ipynb)
@@ -326,7 +343,7 @@
 
 ### [5.7 Stock Cutting](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.07-Stock-Cutting.ipynb)
 - [Background](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/05.07-Stock-Cutting.ipynb#Background)
-* Links
+* Markdown Links
     - [IPython notebook](http://ipython.org/notebook.html)
 
 
@@ -348,7 +365,7 @@
 - [Formulation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/06.03-Risk-Neutral-Gambler.ipynb#Formulation)
 - [Solution by Linear Programming](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/06.03-Risk-Neutral-Gambler.ipynb#Solution-by-Linear-Programming)
 - [MathProg Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/06.03-Risk-Neutral-Gambler.ipynb#MathProg-Model)
-* Links
+* Markdown Links
     - [_Reinforcement Learning_ (MIT Press, 1998)](http://mitpress.mit.edu/books/reinforcement-learning)
     - [_Introduction to Stochastic Dynamic Programming_ (Academic Press, 1983)](http://www.amazon.com/Introduction-Stochastic-Dynamic-Programming-Sheldon/dp/0125984219)
 
@@ -387,7 +404,7 @@
     - [Linear returns don't tell the whole story.](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Linear-returns-don't-tell-the-whole-story.)
     - [Compounded Log Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Compounded-Log-Returns)
     - [Volatility Drag and the Relationship between Linear and Log Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.01-Measuring-Return.ipynb#Volatility-Drag-and-the-Relationship-between-Linear-and-Log-Returns)
-* Links
+* Markdown Links
     - [Yahoo Finance](http://finance.yahoo.com/)
     - [Google Finance](https://www.google.com/finance)
     - [Quandl](http://www.quandl.com/)
@@ -421,10 +438,10 @@
 - [European Put Option](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.03-Binomial-Model-for-Pricing-Options.ipynb#European-Put-Option)
 - [Early Exercise](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.03-Binomial-Model-for-Pricing-Options.ipynb#Early-Exercise)
 - [American Put Option](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.03-Binomial-Model-for-Pricing-Options.ipynb#American-Put-Option)
-* Figures
+* Markdown Figures
     - [BinomialModel](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/BinomialModel.png?raw=true)
     - [BinomialModel_Options](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/BinomialModel_Options.png?raw=true)
-* Links
+* Markdown Links
     - [Luenberger (2013)](https://global.oup.com/ushe/product/investment-science-9780199740086?cc=us&lang=en&)
 
 ### [7.4 Real Options](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb)
@@ -435,10 +452,10 @@
 - [Example 3. Simplico Gold Mine Capital Investment](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb#Example-3.-Simplico-Gold-Mine-Capital-Investment)
 - [Price Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb#Price-Model)
 - [Growth Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.04-Real-Options.ipynb#Growth-Model)
-* Figures
+* Markdown Figures
     - [../img/TimelineRealOption.png](../img/TimelineRealOption.png)
     - [../img/BinomialRealOption.png](../img/BinomialRealOption.png)
-* Links
+* Markdown Links
     - [analysis of Martin Haugh](http://www.columbia.edu/~mh2078/FoundationsFE/RealOptions.pdf)
 
 ### [7.5 Portfolio Optimization](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb)
@@ -459,7 +476,7 @@
 - [Risk-Free Asset](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb#Risk-Free-Asset)
 - [Maximum Log Return (to be developed).](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb#Maximum-Log-Return-(to-be-developed).)
 - [Exercises](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.05-Portfolio-Optimization.ipynb#Exercises)
-* Links
+* Markdown Links
     - [Jupyter notebook](http://jupyter.org/)
 
 ### [7.6 Portfolio Optimization using Mean Absolute Deviation](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.06-Portfolio-Optimization-using-Mean-Absolute-Deviation.ipynb)
@@ -469,7 +486,7 @@
 - [Seeding the GLPK Pseudo-Random Number Generator](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.06-Portfolio-Optimization-using-Mean-Absolute-Deviation.ipynb#Seeding-the-GLPK-Pseudo-Random-Number-Generator)
 - [Simulation of the Historical Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.06-Portfolio-Optimization-using-Mean-Absolute-Deviation.ipynb#Simulation-of-the-Historical-Returns)
 - [MathProg Model](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.06-Portfolio-Optimization-using-Mean-Absolute-Deviation.ipynb#MathProg-Model)
-* Links
+* Markdown Links
     - [IPython notebook](http://ipython.org/notebook.html)
     - [GLPK Wikibook tutorial on the subject](http://en.wikibooks.org/wiki/GLPK/Portfolio_Optimization)
     - [A complete tutorial](http://en.wikibooks.org/wiki/GLPK/Portfolio_Optimization)
@@ -485,7 +502,7 @@
     - [Compute Component Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.07-MAD-Portfolio-Optimization.ipynb#Compute-Component-Returns)
 - [MAD Porfolio](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.07-MAD-Portfolio-Optimization.ipynb#MAD-Porfolio)
 - [Problem 1: Solve for Dominating MAD Portfolio](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.07-MAD-Portfolio-Optimization.ipynb#Problem-1:-Solve-for-Dominating-MAD-Portfolio)
-* Links
+* Markdown Links
     - [IPython notebook](http://ipython.org/notebook.html)
     - [GLPK Wikibook tutorial on the subject](http://en.wikibooks.org/wiki/GLPK/Portfolio_Optimization)
     - [http://github.com/jckantor/CBE20255](http://github.com/jckantor/CBE20255)
@@ -500,11 +517,11 @@
     - [Maximizing Growth](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.08-Log-Optimal-Growth-and-the-Kelly-Criterion.ipynb#Maximizing-Growth)
 - [Kelly's Criterion: Maximizing Growth for a Game with Arbitrary Odds](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.08-Log-Optimal-Growth-and-the-Kelly-Criterion.ipynb#Kelly's-Criterion:-Maximizing-Growth-for-a-Game-with-Arbitrary-Odds)
 - [Volatility Pumping](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.08-Log-Optimal-Growth-and-the-Kelly-Criterion.ipynb#Volatility-Pumping)
-* Figures
+* Markdown Figures
     - [Kelly_Criterion_Fig1](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Fig1.png?raw=true)
     - [Kelly_Criterion_Fig2](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Fig2.png?raw=true)
     - [Kelly_Criterion_Volatility_Pumping](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Volatility_Pumping.png?raw=true)
-* Links
+* Markdown Links
     - [IPython notebook](http://ipython.org/notebook.html)
 
 ### [7.9 Log-Optimal Portfolios](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.09-Log-Optimal-Portfolios.ipynb)
@@ -514,13 +531,13 @@
 - [Example 2. Betting Wheel](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.09-Log-Optimal-Portfolios.ipynb#Example-2.-Betting-Wheel)
 - [Example 3. Stock/Bond Portfolio in Continuous Time](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.09-Log-Optimal-Portfolios.ipynb#Example-3.-Stock/Bond-Portfolio-in-Continuous-Time)
 - [Volatility Pumping](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.09-Log-Optimal-Portfolios.ipynb#Volatility-Pumping)
-* Figures
+* Markdown Figures
     - [Kelly_Criterion_Fig2](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Fig2.png?raw=true)
     - [Kelly_Criterion_Volatility_Pumping](https://github.com/jckantor/CBE40455/blob/master/notebooks/figures/Kelly_Criterion_Volatility_Pumping.png?raw=true)
 
 
 ## [Chapter 8.0 Optimization in Google Sheets](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/08.00-Optimization-in-Google-Sheets.ipynb)
-* Links
+* Markdown Links
     - [Production Planning with Constraints (Google Sheet)](https://docs.google.com/spreadsheets/d/1StL_Z-GnE23LuS93mr9fybxmcAopFuWVvGTauJgvxng/edit?usp=sharing)
     - [SEMD Refinery (Google Sheet)](https://docs.google.com/spreadsheets/d/1x-DX4rnt6LCLiDpuSEwZDF0zs5mpVrpcjlU5kb2dmUA/edit?usp=sharing)
     - [Transportation Network Optimization (Google Sheet)](https://docs.google.com/spreadsheets/d/1-loaUHVteMnf09fKJy9F03x51OfnUvvbiLgX4k_eaPs/edit?usp=sharing)
