@@ -446,6 +446,8 @@
     - [Log Returns](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Log-Returns)
     - [Forecasting](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Forecasting)
     - [Simulation using Generators](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.02-Geometric-Brownian-Motion.ipynb#Simulation-using-Generators)
+* Markdown Links
+    - [`pandas-datareader`](https://pandas-datareader.readthedocs.io/en/latest/#)
 
 ### [7.3 Binomial Model for Pricing Options](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.03-Binomial-Model-for-Pricing-Options.ipynb)
 - [Historical Data](http://nbviewer.jupyter.org/github/jckantor/CBE40455/blob/master/notebooks/07.03-Binomial-Model-for-Pricing-Options.ipynb#Historical-Data)
